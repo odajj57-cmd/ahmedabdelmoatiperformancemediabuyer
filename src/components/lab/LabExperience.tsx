@@ -54,7 +54,7 @@ const LabExperience = () => {
 
         <section className="mx-auto max-w-5xl px-6 pt-16 pb-24 sm:pt-24">
           <Reveal as="h1" className="text-4xl leading-tight font-bold sm:text-6xl">
-            Mohamed Abdelkader
+            Ahmed Abdel Moati
           </Reveal>
           <Reveal delay={80} as="p" className="mt-4 max-w-2xl text-lg text-muted-foreground">
             Performance Marketer turning campaign data into profitable business decisions.
@@ -153,7 +153,7 @@ const LabExperience = () => {
         </section>
 
         <footer className="border-t border-border px-6 py-8 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Mohamed Abdelkader
+          © {new Date().getFullYear()} Ahmed Abdel Moati
         </footer>
       </div>
     </div>
