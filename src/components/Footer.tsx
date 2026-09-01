@@ -11,19 +11,22 @@ const Footer = () => {
           <div className="w-full text-center md:text-right md:justify-self-end">
             <h3 className="fluid-h3 font-bold text-primary mb-3 sm:mb-4">Performance Marketer</h3>
             <p className="fluid-sm text-foreground">
-              بحول بيانات الحملات لقرارات مربحة في البراند
+              من الإعلان لشراء المنتج بحول البيانات لقرارات ربحية في البراند
             </p>
           </div>
 
           {/* Services Section */}
           <div className="w-full text-center md:justify-self-center">
             <h3 className="fluid-h3 font-semibold text-primary mb-3 sm:mb-4">الخدمات إلي بعملها</h3>
-            <p className="fluid-sm text-foreground">بناء وإدارة الحملات الإعلانية</p>
+            <p className="fluid-sm text-foreground">إدارة الحملات الإعلانية</p>
+            <p className="fluid-sm text-foreground">تصميم المواقع وتحسين معدل التحويل</p>
           </div>
 
           {/* Contact Section */}
           <div className="w-full flex flex-col justify-start items-center md:items-start text-center md:text-left md:justify-self-start">
-            <h3 className="fluid-h3 font-semibold text-primary mb-3 sm:mb-4">بكبر البراند بأرقام</h3>
+            <h3 className="fluid-h3 font-semibold text-primary mb-3 sm:mb-4">
+              يلا نكبر البراند بالأرقام والبيانات
+            </h3>
 
             <a
               href={WHATSAPP_URL}

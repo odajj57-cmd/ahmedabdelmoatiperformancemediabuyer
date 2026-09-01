@@ -77,20 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mohamed Abdelkader | Performance Media Buyer" },
+      { title: "Ahmed Abdel Moati | Performance Marketer" },
       {
         name: "description",
-        content: "بحول بيانات الحملات لقرارات مربحة في البيزنس",
+        content:
+          "Performance Marketer | Web Conversion Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة",
       },
-      { name: "author", content: "Mohamed Abdelkader" },
-      { property: "og:title", content: "Mohamed Abdelkader | Performance Media Buyer" },
+      { name: "author", content: "Ahmed Abdel Moati" },
+      { property: "og:title", content: "Ahmed Abdel Moati | Performance Marketer" },
       {
         property: "og:description",
-        content: "بحول بيانات الحملات لقرارات مربحة في البيزنس",
+        content:
+          "Performance Marketer | Web Conversion Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { property: "og:site_name", content: "Mohamed Abdelkader" },
+      { property: "og:site_name", content: "Ahmed Abdel Moati" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

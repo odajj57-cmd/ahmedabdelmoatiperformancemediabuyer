@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import { WHATSAPP_URL, EMAIL } from '@/lib/links';
 
 const Contact = () => {
@@ -37,7 +37,8 @@ const Contact = () => {
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
             />
             <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
-              جاهو تحول بيانات الحملات لقرارات مربحة تحقق هدف البراند
+              من الإعلان لشراء المنتج أو الخدمة، جاهز نبني Funnel ونحول البيانات لقرارات ربحية في
+              البراند؟
             </span>
             <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
           </motion.a>
@@ -49,13 +50,14 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             href={`mailto:${EMAIL}?subject=${encodeURIComponent('عرض عمل أو تعاون')}&body=${encodeURIComponent('أهلاً،\nأنا حابب أتكلم معاك بخصوص...')}`}
             aria-label="تواصل معي عبر البريد الإلكتروني"
-            className="group relative isolate flex flex-col items-center justify-center w-full overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground rounded-2xl py-4 sm:py-5 px-5 sm:px-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-primary/30"
+            className="group relative isolate flex flex-col items-center justify-center w-full overflow-hidden bg-[hsl(201,100%,35%)] hover:bg-[hsl(201,100%,30%)] text-white rounded-2xl py-4 sm:py-5 px-5 sm:px-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-[hsl(201,100%,35%)]/30"
           >
-            <FaEnvelope
+            <FaLinkedinIn
               aria-hidden="true"
-              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
+              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-white opacity-[0.28]"
             />
-            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
+            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center inline-flex items-center gap-2">
+              <FaLinkedinIn aria-hidden="true" className="shrink-0" />
               لو عندك إستفسار رسمي إبعتلي رسالة بالتفاصيل
             </span>
             <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
