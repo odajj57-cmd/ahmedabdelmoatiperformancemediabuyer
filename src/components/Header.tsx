@@ -12,7 +12,7 @@ const Header = () => {
             href="#" 
             className="fluid-h3 font-extrabold text-primary tracking-wide hover:text-accent transition-colors truncate min-w-0"
           >
-            Mohamed Abdelkader
+            Ahmed Abdel Moati
           </a>
           
           {/* Desktop Navigation */}

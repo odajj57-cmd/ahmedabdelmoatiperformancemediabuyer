@@ -11,7 +11,7 @@ import ogCover from "@/assets/og-cover.png.asset.json";
 
 const ogImage = `https://mohamedabdelkader-performancmarketer.lovable.app${ogCover.url}`;
 
-const title = "Mohamed Abdelkader| PerformanceMarketer";
+const title = "Ahmed Abdel Moati| PerformanceMarketer";
 const description =
   "ببني وأدير الحملات الإعلانية وبحول البيانات لقرارات مربحة لتحقيق هدف البراند";
 
