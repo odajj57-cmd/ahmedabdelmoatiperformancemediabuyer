@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
-import { WHATSAPP_URL, EMAIL } from '@/lib/links';
+import { WHATSAPP_URL, LINKEDIN_URL } from '@/lib/links';
+
 
 const Contact = () => {
   return (
