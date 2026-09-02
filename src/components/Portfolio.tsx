@@ -19,11 +19,138 @@ interface CaseStudy {
   details: string;
 }
 
-const caseStudies: CaseStudy[] = [
+const caseStudies: CaseStudy[] = [{
+    id: 'furniture-brand',
+    name: 'Furniture Brand — B2C Performance Marketing',
+    cover: caseImage2.url,
+    proof: '',
+    short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
+    details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
+ROAS: 35X | 45 Days | 35 Orders
+
+التحدي | The Challenge
+المصنع كان شغال بشكل أساسي B2B مع المعارض، وحركة السوق والكاش فلو كانت مأثرة على دورة وحركة الإنتاج، وقرر يدخل سوق الـB2C ويبيع مباشرة للعميل النهائي.
+رغم وجود مميزات تنافسية واضحة — سعر أقل بحوالي 5,000 جنيه من المعارض، نفس الجودة اللي بينزلها المعارض، وضمان 5 سنوات — كان بيصرف 30 ألف جنيه إعلانات بتحقق حوالي 600K:700K EGP Sales.
+المشكلة ماكانتشي في المنتج أو حجم الميزانية، كانت في طريقة تحويل الـAd Spend إلى Sales.
+
+My Approach
+بدأت بتحليل رحلة العميل بالكامل، من أول الإعلان لحد المحادثة والبيع، واكتشفت 3 نقاط رئيسية:
+• الرسالة الإعلانية لم تكن تستغل الميزة التنافسية بشكل واضح.
+• الـCreatives ماكانتشي مبنية على دوافع الشراء والاعتراضات.
+• فريق الـModeration ماكانش شغال بـSales Process واضح لتحويل الـLeads إلى Orders.
+اشتغلنا على تحسين الـConversion System بالكامل.
+
+Strategy
+01 — Audience & Message Testing
+حددنا الـPersona، دوافع الشراء والاعتراضات، واختبرنا أكثر من Creative Angle. أقوى رسالة كانت مبنية على ميزة الشراء من المصدر:
+1- "نفس جودة المعرض، من غير تكاليف زيادة مع ضمان 5 سنوات"
+2- "وفر 5 آلاف جنيه واطلب من المصنع مباشر"
+
+02 — Conversion System
+عملت Script لفريق الـModeration يساعده لتحويل المحادثة من:
+Inquiry → Qualification → Value Proposition → Objection Handling → Order
+وده ساعد على رفع جودة المحادثات وربط أداء الإعلانات بعملية البيع الفعلية.
+
+03 — Scaling & Retargeting
+بعد تحديد الـAudiences والرسائل والـCreatives الأفضل، بدأنا في توسيع العناصر الفعالة تدريجيًا، واستخدمنا Retargeting للجمهور الأكثر اهتمامًا مع إضافة محتوى يدعم الـTrust زي: Product Showcase · Professional Product Visuals · Influencer (Mahmoud Nabil) · Social Proof · Scarcity / FOMO
+
+Campaign Structure
+Phase 1 — Testing (7 Days): Audience + Message + Creative Testing
+Phase 2 — Scaling (21 Days): Scale Winners + Retargeting + Trust Building
+Phase 3 — Conversion Push (15 Days): High-Intent Retargeting + FOMO + Clear CTA
+
+Results
+Ad Spend: 30,000 EGP
+Campaign Duration: 45 Days
+Qualified Messages: 2,345
+Orders: 35
+Revenue: 1,050,000 EGP
+ROAS: 35X
+Revenue Growth — Previous: ~500K EGP → After Optimization: 1.05M EGP ≈ 2.1X Revenue Growth، مع الحفاظ على نفس الـ30K EGP Ad Budget.
+
+What I Contributed
+Media Buying: Campaign Strategy · Audience Research · Creative & Message Testing · Retargeting · Budget Allocation · Campaign Optimization
+Conversion Strategy: Buyer Journey Analysis · Offer Positioning · Lead Qualification · Moderation / Sales Script · Funnel Optimization
+Performance Analysis: CPL / Cost per Qualified Message · Conversion Rate · Orders · Revenue · ROAS
+
+Key Insight
+النتيجة ماكانتشي بسبب Creative واحد أو Campaign واحدة. التحسن حصل لما ربطنا Audience + Message + Creative + Funnel + Sales Process في System واحد.
+الهدف ماكانش الحصول على أكبر عدد من الـLeads، كان تحويل الـAd Spend إلى Qualified Conversations وبعدين Sales.
+From: 30K Ad Spend → ~600:700K Sales
+To: 30K Ad Spend → 1.05M Sales | ROAS: 35X | 35 Orders | 35K Average order value (انتريهات وركن)
+
+My Role
+Performance Marketer / Media Buyer — Owned the campaign strategy, audience testing, creative direction, retargeting, performance optimization, and conversion journey from ad interaction to purchase.`,
+  },
+  {
+    id: 'womens-fashion',
+    name: 'Women’s Fashion Brand — B2C Performance Marketing',
+    cover: caseImage3.url,
+    proof: '',
+    short:
+      '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
+    details: `4 Models Tested → 1 Winner → 257,399 EGP Sales
+27K EGP Ad Spend | 29 Days | ROAS 9.5X
+
+التحدي | The Challenge
+من البداية كان واضح إن أي خطوة لازم تبقى محسوبة، لأن البراند جديد والسوق تنافسي ومفيش مساحة إننا نصرف فلوس على كل حاجة زي Photoshoot احترافي ولا Creatives مكلفة ونستنى نشوف إيه اللي هيبيع.
+فبدل ما نبدأ نبيع الـ4 موديلات وخلاص بشكل عشوائي، قررنا: نختبر الأول… وبعدها نعمل Stock Re ونصرف على اللي السوق اختاره ونركز عليه بشكل أكبر.
+
+My Approach
+البراند لسه جديد في السوق، صنع 4 موديلات بديزاينات مختلفة والميزانية محدودة. ما بدأناش بـPhotoshoot احترافي ولا Creatives مكلفة، بدأنا باللي نقدر نختبر بيه بسرعة: صور واقعية + فيديوهات UGC بسيطة.
+وكل موديل اتجرب بأكتر من زاوية: السعر · الخامة · تجربة المنتج.
+الهدف ماكانش إننا نطلع أحلى إعلان، الهدف كان نعرف: أي موديل الناس هتتفاعل معاه؟ وأي موديل مستعدين يدفعوا فيه؟
+لأن مفيش مساحة أصرف على تصوير احترافي لكل موديل وأتفاجأ إن السوق أصلًا مش عايزه.
+
+Strategy
+01 — Test the 4 Models
+دخلنا الـ4 موديلات في Testing، وكل موديل اتقاس بالأرقام مش بالإحساس: CTR → CPP → Sales.
+ومع المتابعة بدأ الفرق يظهر: موديل واحد بدأ يطلع عن الباقي بشكل واضح — CTR أعلى + CPP أقل + مبيعات أفضل. هنا عرفنا إن عندنا Winner.
+وده كان أهم قرار في الحملة: مش إننا نعرف الـ4 موديلات بيبيعوا ولا لأ، لكن إننا نعرف مين فيهم يستحق ياخد باقي الميزانية، ونعيد التصنيع منه ونزود الألوان ونعمل Photoshoot.
+
+02 — Stop Betting on Everything
+بعد ما الـWinner ظهر، ماكملناش بنفس توزيع الميزانية. ركزنا على الموديل اللي أثبت نفسه، وباقي الموديلات استخدمنا عليها Offers بهدف نمشي الـStock ونحرك الـCash Flow.
+وفي نفس الوقت زودنا سعر الـWinner 10%، يعني بدل ما نضغط عليه بعروض زي باقي المنتجات، حافظنا على قيمته واستغلينا الطلب الموجود عليه لتعويض جزء من الـOffers ونحافظ على ربحية البيزنس.
+
+03 — Scale What Works
+بعد ما النتائج بقت واضحة، بدأنا نزود الميزانية والكريتيف، لكن ما غيرناش الرسالة اللي شغالة لمجرد إننا بنعمل Scaling. الـWinning Message فضلت موجودة وطورنا الـCreatives حواليها.
+ومع زيادة الميزانية كنا بنتابع الـCPP والأرقام باستمرار: طالما الأداء مستحمل الـScaling نزود، ولو الأداء بدأ يتأثر نراجع ونعدل. مفيش قرار بيتاخد لمجرد إننا "حاسين" إن الحملة محتاجة تغيير.
+
+Campaign Structure
+Phase 1 — Testing: 4 Models → Different Angles → CTR + CPP + Sales → Identify the Winner
+Phase 2 — Reallocation: Winner → More Budget | Other Models → Offers → Cash Flow
+Phase 3 — Scaling: Increase Budget + More Creatives + Keep the Winning Message
+
+Results
+Ad Spend: 27,000 EGP
+Campaign Duration: 29 Days
+Total Sales: 257,399 EGP
+Winner Sales: 150,000 EGP
+ROAS: 9.5X
+Conversion Rate: 1.20%
+Models Tested: 4
+وده كله لبراند لسه جديد داخل سوق Women’s Fashion تنافسي جدًا.
+
+What I Contributed
+Product Testing: Testing the 4 Models · Testing Different Angles · Price & Value Testing · UGC Testing · Real Product Content
+Media Buying: Budget Allocation · Product Performance Analysis · Campaign Optimization · Winner Scaling · Creative Testing
+Commercial Decisions: Identifying the Winning Product · Offers for Slow-Moving Products · Cash Flow Consideration · 10% Price Increase on the Winner
+
+Key Insight
+أنت مش محتاج تبدأ بـ4 منتجات وتصرف عليهم بنفس القوة، ومش محتاج من أول يوم تعمل Photoshoot غالي وتبني كل قراراتك على الشكل، خصوصًا لو البراند لسه جديد.
+الأذكى إنك: تختبر → تعرف إيه اللي بيبيع → تصرف عليه → وتسيب السوق يحدد الـWinner.
+27K Ad Spend → 257,399 EGP Sales | ROAS: 9.5X
+وأهم درس للبراند الجديد: متحطش كل فلوسك في التصنيع والتصوير، من البداية لازم يبقى عندك Budget للتسويق والإعلانات، لأنك قبل ما تعرف إيه المنتج اللي هيبيع لازم تدي نفسك فرصة تختبر السوق.
+
+My Role
+Performance Marketer / Media Buyer — Owned the product testing, creative testing, budget allocation, winner identification, offer strategy, campaign optimization, and scaling decisions based on performance data.`,
+  },
+  },
+  
   {
     id: 'fashion-messaging',
     name: 'Fashion Brand — B2C Performance Marketing',
-    cover: caseImage.url,
+    cover: caseImage4.url,
     proof: '',
     short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
     details: `Scaling Messaging Conversations While Reducing Cost per Message
@@ -97,7 +224,7 @@ Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle te
   {
     id: 'luxury-finishes',
     name: 'Luxury Finishes | Branded Interior Design — Consumer-Driven Performance Marketing',
-    cover: caseImage4.url,
+    cover: caseImage.url,
     proof: '',
     short: 'أكثر من 62 ألف شخص و93 ألف مشاهدة محتوى مع توليد 25 Lead و30 محادثة',
     details: `The Goal
@@ -180,133 +307,6 @@ Build the right audience first. Then ask for the lead.
 
 My Role
 Performance Marketer / Media Buyer — Owned the audience acquisition strategy, campaign structure, cold audience testing, retargeting, lead qualification, and performance optimization across the customer journey.`,
-  },
-  {
-    id: 'furniture-brand',
-    name: 'Furniture Brand — B2C Performance Marketing',
-    cover: caseImage3.url,
-    proof: '',
-    short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
-    details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
-ROAS: 35X | 45 Days | 35 Orders
-
-التحدي | The Challenge
-المصنع كان شغال بشكل أساسي B2B مع المعارض، وحركة السوق والكاش فلو كانت مأثرة على دورة وحركة الإنتاج، وقرر يدخل سوق الـB2C ويبيع مباشرة للعميل النهائي.
-رغم وجود مميزات تنافسية واضحة — سعر أقل بحوالي 5,000 جنيه من المعارض، نفس الجودة اللي بينزلها المعارض، وضمان 5 سنوات — كان بيصرف 30 ألف جنيه إعلانات بتحقق حوالي 600K:700K EGP Sales.
-المشكلة ماكانتشي في المنتج أو حجم الميزانية، كانت في طريقة تحويل الـAd Spend إلى Sales.
-
-My Approach
-بدأت بتحليل رحلة العميل بالكامل، من أول الإعلان لحد المحادثة والبيع، واكتشفت 3 نقاط رئيسية:
-• الرسالة الإعلانية لم تكن تستغل الميزة التنافسية بشكل واضح.
-• الـCreatives ماكانتشي مبنية على دوافع الشراء والاعتراضات.
-• فريق الـModeration ماكانش شغال بـSales Process واضح لتحويل الـLeads إلى Orders.
-اشتغلنا على تحسين الـConversion System بالكامل.
-
-Strategy
-01 — Audience & Message Testing
-حددنا الـPersona، دوافع الشراء والاعتراضات، واختبرنا أكثر من Creative Angle. أقوى رسالة كانت مبنية على ميزة الشراء من المصدر:
-1- "نفس جودة المعرض، من غير تكاليف زيادة مع ضمان 5 سنوات"
-2- "وفر 5 آلاف جنيه واطلب من المصنع مباشر"
-
-02 — Conversion System
-عملت Script لفريق الـModeration يساعده لتحويل المحادثة من:
-Inquiry → Qualification → Value Proposition → Objection Handling → Order
-وده ساعد على رفع جودة المحادثات وربط أداء الإعلانات بعملية البيع الفعلية.
-
-03 — Scaling & Retargeting
-بعد تحديد الـAudiences والرسائل والـCreatives الأفضل، بدأنا في توسيع العناصر الفعالة تدريجيًا، واستخدمنا Retargeting للجمهور الأكثر اهتمامًا مع إضافة محتوى يدعم الـTrust زي: Product Showcase · Professional Product Visuals · Influencer (Mahmoud Nabil) · Social Proof · Scarcity / FOMO
-
-Campaign Structure
-Phase 1 — Testing (7 Days): Audience + Message + Creative Testing
-Phase 2 — Scaling (21 Days): Scale Winners + Retargeting + Trust Building
-Phase 3 — Conversion Push (15 Days): High-Intent Retargeting + FOMO + Clear CTA
-
-Results
-Ad Spend: 30,000 EGP
-Campaign Duration: 45 Days
-Qualified Messages: 2,345
-Orders: 35
-Revenue: 1,050,000 EGP
-ROAS: 35X
-Revenue Growth — Previous: ~500K EGP → After Optimization: 1.05M EGP ≈ 2.1X Revenue Growth، مع الحفاظ على نفس الـ30K EGP Ad Budget.
-
-What I Contributed
-Media Buying: Campaign Strategy · Audience Research · Creative & Message Testing · Retargeting · Budget Allocation · Campaign Optimization
-Conversion Strategy: Buyer Journey Analysis · Offer Positioning · Lead Qualification · Moderation / Sales Script · Funnel Optimization
-Performance Analysis: CPL / Cost per Qualified Message · Conversion Rate · Orders · Revenue · ROAS
-
-Key Insight
-النتيجة ماكانتشي بسبب Creative واحد أو Campaign واحدة. التحسن حصل لما ربطنا Audience + Message + Creative + Funnel + Sales Process في System واحد.
-الهدف ماكانش الحصول على أكبر عدد من الـLeads، كان تحويل الـAd Spend إلى Qualified Conversations وبعدين Sales.
-From: 30K Ad Spend → ~600:700K Sales
-To: 30K Ad Spend → 1.05M Sales | ROAS: 35X | 35 Orders | 35K Average order value (انتريهات وركن)
-
-My Role
-Performance Marketer / Media Buyer — Owned the campaign strategy, audience testing, creative direction, retargeting, performance optimization, and conversion journey from ad interaction to purchase.`,
-  },
-  {
-    id: 'womens-fashion',
-    name: 'Women’s Fashion Brand — B2C Performance Marketing',
-    cover: caseImage2.url,
-    proof: '',
-    short:
-      '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
-    details: `4 Models Tested → 1 Winner → 257,399 EGP Sales
-27K EGP Ad Spend | 29 Days | ROAS 9.5X
-
-التحدي | The Challenge
-من البداية كان واضح إن أي خطوة لازم تبقى محسوبة، لأن البراند جديد والسوق تنافسي ومفيش مساحة إننا نصرف فلوس على كل حاجة زي Photoshoot احترافي ولا Creatives مكلفة ونستنى نشوف إيه اللي هيبيع.
-فبدل ما نبدأ نبيع الـ4 موديلات وخلاص بشكل عشوائي، قررنا: نختبر الأول… وبعدها نعمل Stock Re ونصرف على اللي السوق اختاره ونركز عليه بشكل أكبر.
-
-My Approach
-البراند لسه جديد في السوق، صنع 4 موديلات بديزاينات مختلفة والميزانية محدودة. ما بدأناش بـPhotoshoot احترافي ولا Creatives مكلفة، بدأنا باللي نقدر نختبر بيه بسرعة: صور واقعية + فيديوهات UGC بسيطة.
-وكل موديل اتجرب بأكتر من زاوية: السعر · الخامة · تجربة المنتج.
-الهدف ماكانش إننا نطلع أحلى إعلان، الهدف كان نعرف: أي موديل الناس هتتفاعل معاه؟ وأي موديل مستعدين يدفعوا فيه؟
-لأن مفيش مساحة أصرف على تصوير احترافي لكل موديل وأتفاجأ إن السوق أصلًا مش عايزه.
-
-Strategy
-01 — Test the 4 Models
-دخلنا الـ4 موديلات في Testing، وكل موديل اتقاس بالأرقام مش بالإحساس: CTR → CPP → Sales.
-ومع المتابعة بدأ الفرق يظهر: موديل واحد بدأ يطلع عن الباقي بشكل واضح — CTR أعلى + CPP أقل + مبيعات أفضل. هنا عرفنا إن عندنا Winner.
-وده كان أهم قرار في الحملة: مش إننا نعرف الـ4 موديلات بيبيعوا ولا لأ، لكن إننا نعرف مين فيهم يستحق ياخد باقي الميزانية، ونعيد التصنيع منه ونزود الألوان ونعمل Photoshoot.
-
-02 — Stop Betting on Everything
-بعد ما الـWinner ظهر، ماكملناش بنفس توزيع الميزانية. ركزنا على الموديل اللي أثبت نفسه، وباقي الموديلات استخدمنا عليها Offers بهدف نمشي الـStock ونحرك الـCash Flow.
-وفي نفس الوقت زودنا سعر الـWinner 10%، يعني بدل ما نضغط عليه بعروض زي باقي المنتجات، حافظنا على قيمته واستغلينا الطلب الموجود عليه لتعويض جزء من الـOffers ونحافظ على ربحية البيزنس.
-
-03 — Scale What Works
-بعد ما النتائج بقت واضحة، بدأنا نزود الميزانية والكريتيف، لكن ما غيرناش الرسالة اللي شغالة لمجرد إننا بنعمل Scaling. الـWinning Message فضلت موجودة وطورنا الـCreatives حواليها.
-ومع زيادة الميزانية كنا بنتابع الـCPP والأرقام باستمرار: طالما الأداء مستحمل الـScaling نزود، ولو الأداء بدأ يتأثر نراجع ونعدل. مفيش قرار بيتاخد لمجرد إننا "حاسين" إن الحملة محتاجة تغيير.
-
-Campaign Structure
-Phase 1 — Testing: 4 Models → Different Angles → CTR + CPP + Sales → Identify the Winner
-Phase 2 — Reallocation: Winner → More Budget | Other Models → Offers → Cash Flow
-Phase 3 — Scaling: Increase Budget + More Creatives + Keep the Winning Message
-
-Results
-Ad Spend: 27,000 EGP
-Campaign Duration: 29 Days
-Total Sales: 257,399 EGP
-Winner Sales: 150,000 EGP
-ROAS: 9.5X
-Conversion Rate: 1.20%
-Models Tested: 4
-وده كله لبراند لسه جديد داخل سوق Women’s Fashion تنافسي جدًا.
-
-What I Contributed
-Product Testing: Testing the 4 Models · Testing Different Angles · Price & Value Testing · UGC Testing · Real Product Content
-Media Buying: Budget Allocation · Product Performance Analysis · Campaign Optimization · Winner Scaling · Creative Testing
-Commercial Decisions: Identifying the Winning Product · Offers for Slow-Moving Products · Cash Flow Consideration · 10% Price Increase on the Winner
-
-Key Insight
-أنت مش محتاج تبدأ بـ4 منتجات وتصرف عليهم بنفس القوة، ومش محتاج من أول يوم تعمل Photoshoot غالي وتبني كل قراراتك على الشكل، خصوصًا لو البراند لسه جديد.
-الأذكى إنك: تختبر → تعرف إيه اللي بيبيع → تصرف عليه → وتسيب السوق يحدد الـWinner.
-27K Ad Spend → 257,399 EGP Sales | ROAS: 9.5X
-وأهم درس للبراند الجديد: متحطش كل فلوسك في التصنيع والتصوير، من البداية لازم يبقى عندك Budget للتسويق والإعلانات، لأنك قبل ما تعرف إيه المنتج اللي هيبيع لازم تدي نفسك فرصة تختبر السوق.
-
-My Role
-Performance Marketer / Media Buyer — Owned the product testing, creative testing, budget allocation, winner identification, offer strategy, campaign optimization, and scaling decisions based on performance data.`,
-  },
 ];
 
 const Portfolio = () => {
