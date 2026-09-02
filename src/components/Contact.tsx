@@ -38,7 +38,7 @@ const Contact = () => {
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
             />
             <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
-              من الإعلان لشراء المنتج أو الخدمة، جاهز نبني Funnel ونحول البيانات لقرارات ربحية في
+              من الإعلان لشراء المنتج أو الخدمة جاهز نبني Funnel ونحول البيانات لقرارات ربحية في
               البراند؟
             </span>
             <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
@@ -49,20 +49,22 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            href={`mailto:${EMAIL}?subject=${encodeURIComponent('عرض عمل أو تعاون')}&body=${encodeURIComponent('أهلاً،\nأنا حابب أتكلم معاك بخصوص...')}`}
-            aria-label="تواصل معي عبر البريد الإلكتروني"
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="تواصل معي عبر لينكد إن"
             className="group relative isolate flex flex-col items-center justify-center w-full overflow-hidden bg-[hsl(201,100%,35%)] hover:bg-[hsl(201,100%,30%)] text-white rounded-2xl py-4 sm:py-5 px-5 sm:px-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-[hsl(201,100%,35%)]/30"
           >
             <FaLinkedinIn
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-white opacity-[0.28]"
             />
-            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center inline-flex items-center gap-2">
-              <FaLinkedinIn aria-hidden="true" className="shrink-0" />
-              لو عندك إستفسار رسمي إبعتلي رسالة بالتفاصيل
+            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
+              عايز تعرف أكتر عني ؟
             </span>
             <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
           </motion.a>
+
         </div>
       </div>
     </section>
