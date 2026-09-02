@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpLeft } from 'lucide-react';
-
-const ease = [0.22, 1, 0.36, 1] as const;
+import { ChevronDown, ArrowUpLeft } from 'lucide-react';
+import { WHATSAPP_URL } from '@/lib/links';
 
 const services = [
   {
@@ -14,58 +14,87 @@ const services = [
   },
   {
     title: 'تصميم المواقع وتحسين معدل التحويل',
-    body:
-      'بصمم مواقع وصفحات هبوط وبركز فيها على شراء العميل بشكل أسرع.',
+    body: 'بصمم مواقع وصفحات هبوط وبركز فيها على شراء العميل بشكل أسرع.',
     toolsLabel: 'المهارات والأدوات إلي بستخدمها:',
     tools: 'تحليل صفحات الهبوط والتصميم على Shopify · Easy Orders',
   },
 ];
 
 const Services = () => {
-  return (
-    <section id="services" className="py-20 sm:py-24 bg-background relative overflow-hidden">
-      {/* إضاءة خلفية خفيفة جدًا */}
-      <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
-        <div className="absolute top-1/3 right-1/4 w-[420px] h-[420px] bg-primary rounded-full blur-[140px]" />
-      </div>
+  const [openIndex, setOpenIndex] = useState(-1);
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <motion.div
+  return (
+    <section
+      id="services"
+      dir="rtl"
+      className="bg-background py-20 sm:py-24"
+      aria-labelledby="services-heading"
+    >
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <motion.h2
+          id="services-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease }}
-          className="text-right mb-10 sm:mb-14"
+          transition={{ duration: 0.6 }}
+          className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-14"
         >
-          <h2 className="fluid-h2 font-bold text-primary mb-4">
-            الخدمات إلي بعملها
-          </h2>
-        </motion.div>
+          الخدمات إلي بعملها
+        </motion.h2>
 
-        {services.map((s) => (
-          <motion.div
-            key={s.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease }}
-            className="border-t border-primary/15 last:border-b py-7 sm:py-8 text-right"
-          >
-            <h3 className="fluid-h3 font-bold text-primary">{s.title}</h3>
-            <p className="pt-3 fluid-body text-foreground max-w-3xl leading-loose">{s.body}</p>
-            <p className="pt-4 fluid-sm font-semibold text-primary">{s.toolsLabel}</p>
-            <p className="pt-1 fluid-sm text-foreground max-w-3xl leading-loose">{s.tools}</p>
-          </motion.div>
-        ))}
+        <div className="border-t border-border">
+          {services.map((item, index) => {
+            const isOpen = openIndex === index;
 
-        {/* Section CTA */}
-        <div className="mt-6 sm:mt-8 text-left">
+            return (
+              <div key={item.title} className="border-b border-border">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                  aria-expanded={isOpen}
+                  aria-controls={`service-body-${index}`}
+                  className="flex w-full items-center justify-between gap-5 py-5 text-right text-foreground transition-colors hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-6"
+                >
+                  <span className="fluid-body font-bold">{item.title}</span>
+                  <ChevronDown
+                    aria-hidden="true"
+                    className={`h-5 w-5 shrink-0 text-primary transition-transform duration-300 ${
+                      isOpen ? 'rotate-180' : 'rotate-0'
+                    }`}
+                  />
+                </button>
+
+                <div
+                  id={`service-body-${index}`}
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="fluid-body max-w-4xl text-right leading-loose text-foreground">
+                      {item.body}
+                    </p>
+                    <p className="fluid-sm pt-4 text-right font-semibold text-primary">
+                      {item.toolsLabel}
+                    </p>
+                    <p className="fluid-sm max-w-4xl pt-1 pb-6 text-right leading-loose text-foreground">
+                      {item.tools}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-8 text-left">
           <a
-            href="#faq"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105"
           >
-            <span className="relative z-10">عندك أسئلة قبل ما نبني حملتك الإعلانية؟ إجابتها هنا</span>
+            <span className="relative z-10">عندك منتج وعايز تبني حملة إعلانية؟</span>
             <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
           </a>
         </div>
