@@ -5,3 +5,5 @@ export const WHATSAPP_URL =
   );
 
 export const EMAIL = "Mohamedkante158@gmail.com";
+
+export const LINKEDIN_URL = "https://www.linkedin.com/in/ahmed-abdel-moati-a2b0a9300/";

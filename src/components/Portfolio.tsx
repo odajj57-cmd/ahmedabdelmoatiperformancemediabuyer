@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowUpLeft, ImageIcon } from 'lucide-react';
 import { WHATSAPP_URL } from '@/lib/links';
+import caseImage from '@/assets/cases/case-image.png.asset.json';
+import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
+import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
+import caseImage4 from '@/assets/cases/case-image-4.png.asset.json';
 
 const CTA_TEXT =
   'جاهز تحول بيانات حملتك الإعلانية لقرارات مربحة تحقق هدف البراند؟ دوس هنا';
@@ -17,9 +21,83 @@ interface CaseStudy {
 
 const caseStudies: CaseStudy[] = [
   {
+    id: 'fashion-messaging',
+    name: 'Fashion Brand — B2C Performance Marketing',
+    cover: caseImage.url,
+    proof: '',
+    short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
+    details: `Scaling Messaging Conversations While Reducing Cost per Message
+4.94K EGP Ad Spend | 2,404 Conversations | Cost Dropped from 4.16 → 1.44 EGP
+
+التحدي | The Challenge
+المنتج كان تنافسي والسعر اقتصادي لكن مكانش واصل لعدد كافي من الجمهور. في البداية كانت تكلفة الـMessage حوالي 4.16 EGP وهي مقبولة، وده معناه إن لو عايزين نزود الـVolume بشكل كبير لازم نكون قادرين نحافظ على تكلفة مناسبة.
+فبدل ما نزود الـBudget وخلاص، ركزنا على السؤال الأهم: إيه اللي يخلي الشخص أصلًا عايز يفتح الـMessage؟
+
+My Approach
+بدأت أتعامل مع الـFunnel على إنه مش جمهور واحد ولا رسالة واحدة. كل مرحلة ليها: Buyer Intent → Sales Angle → Creative Format → Message.
+يعني الشخص اللي لسه بيتعرف على البراند مش هكلمه بنفس الطريقة اللي هكلم بيها شخص شاف المنتجات قبل كده أو أبدى اهتمام.
+والـCreatives نفسها ماكانتشي بتكرر نفس الفكرة، اختبرنا Sales Angles مختلفة + Formats مختلفة، وربطنا كل رسالة بالمرحلة اللي العميل موجود فيها.
+
+Strategy
+01 — Testing Different Sales Angles
+بدل ما الإعلان يقول "عندنا منتجات جديدة تعالى شوف"، اختبرنا زوايا بيع مختلفة حسب دوافع العميل:
+• Product Value — ليه المنتج يستحق الشراء؟
+• Price / Offer — إيه القيمة اللي هاخدها مقابل السعر؟
+• Product Features — إيه اللي يميز المنتج؟
+• Social Proof / Trust — ليه أثق في البراند وأشتري منه؟
+الهدف كان نعرف: أي Angle بيخلّي العميل يتفاعل ويفتح الـMessage؟
+
+02 — Match the Creative to the Angle
+ماكانش كل الـAngles بتتقدم بنفس الـFormat، استخدمنا الـCreative Format اللي يخدم الرسالة:
+• Product Visuals — لإظهار التفاصيل والشكل
+• UGC / Real Experience — لما نحتاج نبني Trust
+• Offer-Based Creatives — لما يكون السعر أو العرض هو الـHook
+• Different Product Angles — لما نحتاج نوضح الاستخدام أو الـValue
+الفكرة إننا ماكناش بنعمل Creatives كتير لمجرد إن عندنا Creatives كتير، كنا بنختبر: Message × Angle × Format
+
+03 — Personalized Messaging by Funnel Stage
+Cold Audience → الهدف: Attention + Product Interest
+Engaged Audience → الهدف: Value + Trust
+High-Intent Audience → الهدف: Offer + Clear Reason to Start a Conversation
+وده خلّى الإعلان يتكلم مع العميل حسب المرحلة اللي هو فيها، بدل ما كل الناس تسمع نفس الكلام.
+
+Campaign Structure
+Phase 1 — Testing: Sales Angles + Creative Formats + Audience Testing
+Phase 2 — Optimization: Identify Winning Angles + Winning Formats + Better Messaging
+Phase 3 — Scaling: Increase Budget + Focus on Winners + Stage-Based Messaging
+
+Results
+Total Ad Spend: 4,943.74 EGP
+Total Conversations: 2,404
+Average Cost / Conversation: 2.06 EGP
+Starting Cost / Conversation: 4.16 EGP
+Final Cost / Conversation: 1.44 EGP
+Performance Progression:
+1,943.74 EGP → 467 Conversations → 4.16 EGP / Conversation
+1,400 EGP → 823 Conversations → 1.70 EGP / Conversation
+1,600 EGP → 1,114 Conversations → 1.44 EGP / Conversation
+يعني مع زيادة الـVolume قدرنا ننزل تكلفة الـConversation من 4.16 EGP → 1.44 EGP بانخفاض حوالي 65%، وفي نفس الوقت زاد الـVolume من 467 → 1,114 Conversations.
+
+What I Contributed
+Strategy: Funnel Mapping · Sales Angle Development · Audience Segmentation · Stage-Based Messaging
+Creative Testing: Creative Format Testing · UGC · Product Visuals · Offer-Based Creatives · Message × Format Testing
+Media Buying: Campaign Structure · Budget Allocation · Optimization · Scaling Winning Combinations
+Performance Analysis: Cost per Conversation · Conversation Volume · Creative Performance · Audience Performance · Funnel Stage Performance
+
+Key Insight
+في الـFashion، مش كل ما عايز Messages أكتر تزود الـBudget، لأن لو الـCreative والرسالة مش مقنعين أنت ببساطة هتدفع أكتر عشان تجيب نفس النتيجة.
+اللي فرق هنا إننا ما تعاملناش مع Audience + Creative + Message كحاجة واحدة ثابتة، ربطنا كل واحد بالمرحلة اللي العميل موجود فيها:
+Right Angle → Right Format → Right Message → Right Funnel Stage
+والنتيجة: 4.94K EGP → 2,404 Conversations وتكلفة الرسالة نزلت من 4.16 EGP → 1.44 EGP، يعني Volume أعلى + Cost أقل.
+وده بالنسبة لي هو الـPerformance الحقيقي: مش إنك تجيب Messages كتير، إنك تعرف إيه اللي بيجيبها وليه وتقدر تكرره على Scale.
+
+My Role
+Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle testing, creative format testing, stage-based messaging, campaign optimization, budget allocation, and scaling decisions based on performance data.`,
+  },
+  {
     id: 'luxury-finishes',
     name: 'Luxury Finishes | Branded Interior Design — Consumer-Driven Performance Marketing',
-    cover: '',
+    cover: caseImage4.url,
     proof: '',
     short: 'أكثر من 62 ألف شخص و93 ألف مشاهدة محتوى مع توليد 25 Lead و30 محادثة',
     details: `The Goal
@@ -106,7 +184,7 @@ Performance Marketer / Media Buyer — Owned the audience acquisition strategy, 
   {
     id: 'furniture-brand',
     name: 'Furniture Brand — B2C Performance Marketing',
-    cover: '',
+    cover: caseImage3.url,
     proof: '',
     short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
     details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
@@ -169,7 +247,7 @@ Performance Marketer / Media Buyer — Owned the campaign strategy, audience tes
   {
     id: 'womens-fashion',
     name: 'Women’s Fashion Brand — B2C Performance Marketing',
-    cover: '',
+    cover: caseImage2.url,
     proof: '',
     short:
       '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
@@ -229,80 +307,6 @@ Key Insight
 My Role
 Performance Marketer / Media Buyer — Owned the product testing, creative testing, budget allocation, winner identification, offer strategy, campaign optimization, and scaling decisions based on performance data.`,
   },
-  {
-    id: 'fashion-messaging',
-    name: 'Fashion Brand — B2C Performance Marketing',
-    cover: '',
-    proof: '',
-    short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
-    details: `Scaling Messaging Conversations While Reducing Cost per Message
-4.94K EGP Ad Spend | 2,404 Conversations | Cost Dropped from 4.16 → 1.44 EGP
-
-التحدي | The Challenge
-المنتج كان تنافسي والسعر اقتصادي لكن مكانش واصل لعدد كافي من الجمهور. في البداية كانت تكلفة الـMessage حوالي 4.16 EGP وهي مقبولة، وده معناه إن لو عايزين نزود الـVolume بشكل كبير لازم نكون قادرين نحافظ على تكلفة مناسبة.
-فبدل ما نزود الـBudget وخلاص، ركزنا على السؤال الأهم: إيه اللي يخلي الشخص أصلًا عايز يفتح الـMessage؟
-
-My Approach
-بدأت أتعامل مع الـFunnel على إنه مش جمهور واحد ولا رسالة واحدة. كل مرحلة ليها: Buyer Intent → Sales Angle → Creative Format → Message.
-يعني الشخص اللي لسه بيتعرف على البراند مش هكلمه بنفس الطريقة اللي هكلم بيها شخص شاف المنتجات قبل كده أو أبدى اهتمام.
-والـCreatives نفسها ماكانتشي بتكرر نفس الفكرة، اختبرنا Sales Angles مختلفة + Formats مختلفة، وربطنا كل رسالة بالمرحلة اللي العميل موجود فيها.
-
-Strategy
-01 — Testing Different Sales Angles
-بدل ما الإعلان يقول "عندنا منتجات جديدة تعالى شوف"، اختبرنا زوايا بيع مختلفة حسب دوافع العميل:
-• Product Value — ليه المنتج يستحق الشراء؟
-• Price / Offer — إيه القيمة اللي هاخدها مقابل السعر؟
-• Product Features — إيه اللي يميز المنتج؟
-• Social Proof / Trust — ليه أثق في البراند وأشتري منه؟
-الهدف كان نعرف: أي Angle بيخلّي العميل يتفاعل ويفتح الـMessage؟
-
-02 — Match the Creative to the Angle
-ماكانش كل الـAngles بتتقدم بنفس الـFormat، استخدمنا الـCreative Format اللي يخدم الرسالة:
-• Product Visuals — لإظهار التفاصيل والشكل
-• UGC / Real Experience — لما نحتاج نبني Trust
-• Offer-Based Creatives — لما يكون السعر أو العرض هو الـHook
-• Different Product Angles — لما نحتاج نوضح الاستخدام أو الـValue
-الفكرة إننا ماكناش بنعمل Creatives كتير لمجرد إن عندنا Creatives كتير، كنا بنختبر: Message × Angle × Format
-
-03 — Personalized Messaging by Funnel Stage
-Cold Audience → الهدف: Attention + Product Interest
-Engaged Audience → الهدف: Value + Trust
-High-Intent Audience → الهدف: Offer + Clear Reason to Start a Conversation
-وده خلّى الإعلان يتكلم مع العميل حسب المرحلة اللي هو فيها، بدل ما كل الناس تسمع نفس الكلام.
-
-Campaign Structure
-Phase 1 — Testing: Sales Angles + Creative Formats + Audience Testing
-Phase 2 — Optimization: Identify Winning Angles + Winning Formats + Better Messaging
-Phase 3 — Scaling: Increase Budget + Focus on Winners + Stage-Based Messaging
-
-Results
-Total Ad Spend: 4,943.74 EGP
-Total Conversations: 2,404
-Average Cost / Conversation: 2.06 EGP
-Starting Cost / Conversation: 4.16 EGP
-Final Cost / Conversation: 1.44 EGP
-Performance Progression:
-1,943.74 EGP → 467 Conversations → 4.16 EGP / Conversation
-1,400 EGP → 823 Conversations → 1.70 EGP / Conversation
-1,600 EGP → 1,114 Conversations → 1.44 EGP / Conversation
-يعني مع زيادة الـVolume قدرنا ننزل تكلفة الـConversation من 4.16 EGP → 1.44 EGP بانخفاض حوالي 65%، وفي نفس الوقت زاد الـVolume من 467 → 1,114 Conversations.
-
-What I Contributed
-Strategy: Funnel Mapping · Sales Angle Development · Audience Segmentation · Stage-Based Messaging
-Creative Testing: Creative Format Testing · UGC · Product Visuals · Offer-Based Creatives · Message × Format Testing
-Media Buying: Campaign Structure · Budget Allocation · Optimization · Scaling Winning Combinations
-Performance Analysis: Cost per Conversation · Conversation Volume · Creative Performance · Audience Performance · Funnel Stage Performance
-
-Key Insight
-في الـFashion، مش كل ما عايز Messages أكتر تزود الـBudget، لأن لو الـCreative والرسالة مش مقنعين أنت ببساطة هتدفع أكتر عشان تجيب نفس النتيجة.
-اللي فرق هنا إننا ما تعاملناش مع Audience + Creative + Message كحاجة واحدة ثابتة، ربطنا كل واحد بالمرحلة اللي العميل موجود فيها:
-Right Angle → Right Format → Right Message → Right Funnel Stage
-والنتيجة: 4.94K EGP → 2,404 Conversations وتكلفة الرسالة نزلت من 4.16 EGP → 1.44 EGP، يعني Volume أعلى + Cost أقل.
-وده بالنسبة لي هو الـPerformance الحقيقي: مش إنك تجيب Messages كتير، إنك تعرف إيه اللي بيجيبها وليه وتقدر تكرره على Scale.
-
-My Role
-Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle testing, creative format testing, stage-based messaging, campaign optimization, budget allocation, and scaling decisions based on performance data.`,
-  },
 ];
 
 const Portfolio = () => {
@@ -323,7 +327,7 @@ const Portfolio = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {caseStudies.map((cs) => (
             <motion.article
               key={cs.id}

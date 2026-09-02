@@ -33,15 +33,15 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="تواصل عبر واتساب"
-              className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-5 py-2.5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
+              className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-3.5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
             >
               <FaWhatsapp
                 aria-hidden="true"
                 className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
               />
-              <span className="relative z-10">يلا نبني حملتك الإعلانية</span>
-              <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
+              <ArrowUpLeft className="relative z-10 h-5 w-5" aria-hidden="true" />
             </a>
+
           </div>
         </div>
       </div>
