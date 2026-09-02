@@ -41,7 +41,7 @@ const About = () => {
       </p>
 
       <div className="flex flex-wrap gap-3 justify-end">
-        <GoldWaButton withArrow>يلا بينا نبني حملتك الإعلانية</GoldWaButton>
+        <GoldWaButton withArrow>لو جاهز يلا بينا نبني حملتك الإعلانية من هنا</GoldWaButton>
       </div>
     </motion.section>
   );
