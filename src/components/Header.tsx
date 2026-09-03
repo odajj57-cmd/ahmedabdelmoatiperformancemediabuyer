@@ -39,6 +39,13 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </a>
             <a 
+              href="#testimonials" 
+              className="text-foreground font-semibold hover:text-primary transition-colors text-sm lg:text-base relative group"
+            >
+              عملائي قالو عني
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a 
               href="#contact" 
               className="text-foreground font-semibold hover:text-primary transition-colors text-sm lg:text-base relative group"
             >
@@ -81,6 +88,13 @@ const Header = () => {
               className="block text-foreground font-semibold hover:text-primary transition-colors fluid-sm py-2.5"
             >
               نتائج وأرقام
+            </a>
+            <a 
+              href="#testimonials" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block text-foreground font-semibold hover:text-primary transition-colors fluid-sm py-2.5"
+            >
+              عملائي قالو عني
             </a>
             <a 
               href="#contact" 

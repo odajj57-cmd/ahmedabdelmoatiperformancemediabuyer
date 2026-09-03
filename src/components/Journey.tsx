@@ -3,11 +3,11 @@ import { motion, useInView } from 'framer-motion';
 
 const steps = [
   'بنحط الخطة',
-  'ببني الحملة',
-  'بنتابع أداء الحملات',
-  'بنفهم الأرقام',
-  'بنحسن اللي شغال',
-  'نكبر النتائج',
+  'نجرب',
+  'بنعمل اختبارات',
+  'بحلل البيانات',
+  'بنحسن',
+  'نكبر',
 ];
 
 // Desktop: horizontal wavy path drawn from right (1160) to left (40)
