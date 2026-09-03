@@ -6,6 +6,10 @@ import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
 import caseImage4 from '@/assets/cases/case-image-4.png.asset.json';
+import card6 from '@/assets/cases/card-6.png.asset.json';
+import card7 from '@/assets/cases/card-7.png.asset.json';
+import card8 from '@/assets/cases/card-8.png.asset.json';
+import card9 from '@/assets/cases/card-9.png.asset.json';
 
 const CTA_TEXT =
   'جاهز تحول بيانات حملتك الإعلانية لقرارات مربحة تحقق هدف البراند؟ دوس هنا';
@@ -22,7 +26,7 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [{
     id: 'furniture-brand',
     name: 'Furniture Brand — B2C Performance Marketing',
-    cover: caseImage2.url,
+    cover: card6.url,
     proof: '',
     short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
     details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
@@ -85,7 +89,7 @@ Performance Marketer / Media Buyer — Owned the campaign strategy, audience tes
   {
     id: 'womens-fashion',
     name: 'Women’s Fashion Brand — B2C Performance Marketing',
-    cover: caseImage3.url,
+    cover: card7.url,
     proof: '',
     short:
       '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
@@ -148,7 +152,7 @@ Performance Marketer / Media Buyer — Owned the product testing, creative testi
   {
     id: 'fashion-messaging',
     name: 'Fashion Brand — B2C Performance Marketing',
-    cover: caseImage4.url,
+    cover: card8.url,
     proof: '',
     short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
     details: `Scaling Messaging Conversations While Reducing Cost per Message
@@ -222,7 +226,7 @@ Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle te
   {
     id: 'luxury-finishes',
     name: 'Luxury Finishes | Branded Interior Design — Consumer-Driven Performance Marketing',
-    cover: caseImage.url,
+    cover: card9.url,
     proof: '',
     short: 'أكثر من 62 ألف شخص و93 ألف مشاهدة محتوى مع توليد 25 Lead و30 محادثة',
     details: `The Goal
