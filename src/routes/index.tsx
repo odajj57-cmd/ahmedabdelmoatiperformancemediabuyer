@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Journey from "@/components/Journey";
 import Portfolio from "@/components/Portfolio";
+import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -50,6 +51,7 @@ function Index() {
         <Services />
         <Journey />
         <Portfolio />
+        <Testimonials />
         <FAQ />
         <Contact />
       </main>

@@ -18,7 +18,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="fluid-h2 font-bold text-primary">يلا بينا...بداية أول حملة إعلانية من هنا</h2>
+          <h2 className="fluid-h2 font-bold text-primary">يلا بينا بداية أول حملة إعلانية من هنا</h2>
         </motion.div>
 
         <div className="space-y-4 sm:space-y-6">

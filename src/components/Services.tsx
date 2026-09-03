@@ -37,7 +37,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-14"
+          className="fluid-h2 mb-10 text-right font-bold text-primary sm:mb-14"
         >
           الخدمات إلي بعملها
         </motion.h2>

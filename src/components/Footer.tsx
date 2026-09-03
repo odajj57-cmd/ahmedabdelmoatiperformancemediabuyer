@@ -33,7 +33,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="تواصل عبر واتساب"
-              className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-3.5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
+              className="relative isolate flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
             >
               <FaWhatsapp
                 aria-hidden="true"

@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 
 const faqItems = [
   {
+    question: "هل بتضمن نتيجة معينة عدد مبيعات أو ROAS محدد؟",
+    answer:
+      "في فرق بين ضمان النتيجة وتحديد الهدف. الضمان إن حد يوعدك قبل ما يبدأ الشغل إنك هتحقق رقم ثابت، زي 100 عملية بيع أو ROAS 5X، وده صعب ضمانه لأن النتيجة بتتأثر بالإعلانات والمنتج والسعر والـOffer والمحتوى والـWebsite والـSales Process والسوق.\nأما الهدف فهو رقم واقعي بنحدده بناءً على أرقام البيزنس والميزانية والبيانات المتاحة، ونبني خطة واختبارات للوصول له، مع متابعة الـKPIs وتطوير الأداء باستمرار.\nمش بوعدك برقم قبل ما نبدأ، لكن بنحدد إحنا عايزين نوصل لفين، وإزاي هنقيس إننا ماشيين في الاتجاه الصح.",
+  },
+  {
     question: "هل بتدير الإعلانات فقط ولا بتساعد في الاستراتيجية والمحتوى كمان؟",
     answer:
       "مش ببدأ بالإعلانات مباشرة، الأول بفهم البيزنس والمنتج والجمهور والـCustomer Journey، وبعدها بنحدد الاستراتيجية والرسائل التسويقية والـOffers والـContent Angles المناسبة لكل مرحلة من الـFunnel، ثم نستخدم الإعلانات للوصول للجمهور المناسب وقياس النتائج.",
@@ -15,7 +20,7 @@ const faqItems = [
       "نعم. دوري مش بيقف عند الإعلان، براجع رحلة العميل كاملة من أول ما يشوف الإعلان لحد ما يتحول لعميل سواء من خلال الرسائل أو الـWebsite. بساعد في تحسين وتسريع طريقة الرد والأسئلة التأهيلية والمتابعة مع الـLeads، وبراجع الـWebsite أو الـLanding Page لتحديد نقاط التسريب وتحسين الـOffer والـCTA وتجربة العميل بهدف رفع الـConversion Rate.",
   },
   {
-    question: "إزاي بتقيس نجاح الحملات بعيدًا عن ROAS فقط؟",
+    question: "إزاي بتقيس نجاح الحملات بعيدا عن ROAS فقط؟",
     answer:
       "الـROAS جزء من الصورة، عشان كده بتابع كل المؤشرات زي CPM وCTR وCPC وConversion Rate وCPA وجودة الـLeads، وبربطها بالمبيعات وتكلفة اكتساب العميل والربحية علشان نعرف تأثير الإعلانات الحقيقي على البيزنس.",
   },
@@ -55,7 +60,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-14"
         >
-          عندك أسئلة قبل ما نبني حملتك الإعلانية؟ إجابتها هنا
+          أسئلة تهمك
         </motion.h2>
 
         <div className="border-t border-border">
@@ -87,7 +92,7 @@ const FAQ = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="fluid-body max-w-4xl pb-6 text-right leading-loose text-foreground">
+                    <p className="fluid-body max-w-4xl whitespace-pre-line pb-6 text-right leading-loose text-foreground">
                       {item.answer}
                     </p>
                   </div>

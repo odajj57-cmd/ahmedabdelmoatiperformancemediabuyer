@@ -6,6 +6,10 @@ import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
 import caseImage4 from '@/assets/cases/case-image-4.png.asset.json';
+import card6 from '@/assets/cases/card-6.png.asset.json';
+import card7 from '@/assets/cases/card-7.png.asset.json';
+import card8 from '@/assets/cases/card-8.png.asset.json';
+import card9 from '@/assets/cases/card-9.png.asset.json';
 
 const CTA_TEXT =
   'جاهز تحول بيانات حملتك الإعلانية لقرارات مربحة تحقق هدف البراند؟ دوس هنا';
@@ -22,8 +26,8 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [{
     id: 'furniture-brand',
     name: 'Furniture Brand — B2C Performance Marketing',
-    cover: caseImage2.url,
-    proof: '',
+    cover: card6.url,
+    proof: caseImage2.url,
     short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
     details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
 ROAS: 35X | 45 Days | 35 Orders
@@ -85,8 +89,8 @@ Performance Marketer / Media Buyer — Owned the campaign strategy, audience tes
   {
     id: 'womens-fashion',
     name: 'Women’s Fashion Brand — B2C Performance Marketing',
-    cover: caseImage3.url,
-    proof: '',
+    cover: card7.url,
+    proof: caseImage3.url,
     short:
       '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
     details: `4 Models Tested → 1 Winner → 257,399 EGP Sales
@@ -145,13 +149,11 @@ Key Insight
 My Role
 Performance Marketer / Media Buyer — Owned the product testing, creative testing, budget allocation, winner identification, offer strategy, campaign optimization, and scaling decisions based on performance data.`,
   },
-  },
-  
   {
     id: 'fashion-messaging',
     name: 'Fashion Brand — B2C Performance Marketing',
-    cover: caseImage4.url,
-    proof: '',
+    cover: card8.url,
+    proof: caseImage4.url,
     short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
     details: `Scaling Messaging Conversations While Reducing Cost per Message
 4.94K EGP Ad Spend | 2,404 Conversations | Cost Dropped from 4.16 → 1.44 EGP
@@ -224,8 +226,8 @@ Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle te
   {
     id: 'luxury-finishes',
     name: 'Luxury Finishes | Branded Interior Design — Consumer-Driven Performance Marketing',
-    cover: caseImage.url,
-    proof: '',
+    cover: card9.url,
+    proof: caseImage.url,
     short: 'أكثر من 62 ألف شخص و93 ألف مشاهدة محتوى مع توليد 25 Lead و30 محادثة',
     details: `The Goal
 Build a new audience base and lead generation channel worth EGP 15,000 in 30 days
@@ -307,6 +309,7 @@ Build the right audience first. Then ask for the lead.
 
 My Role
 Performance Marketer / Media Buyer — Owned the audience acquisition strategy, campaign structure, cold audience testing, retargeting, lead qualification, and performance optimization across the customer journey.`,
+  },
 ];
 
 const Portfolio = () => {
