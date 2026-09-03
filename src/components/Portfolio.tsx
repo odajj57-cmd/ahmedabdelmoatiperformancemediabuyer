@@ -305,6 +305,7 @@ Build the right audience first. Then ask for the lead.
 
 My Role
 Performance Marketer / Media Buyer — Owned the audience acquisition strategy, campaign structure, cold audience testing, retargeting, lead qualification, and performance optimization across the customer journey.`,
+  },
 ];
 
 const Portfolio = () => {
