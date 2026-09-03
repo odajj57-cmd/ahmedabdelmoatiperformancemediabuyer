@@ -145,8 +145,6 @@ Key Insight
 My Role
 Performance Marketer / Media Buyer — Owned the product testing, creative testing, budget allocation, winner identification, offer strategy, campaign optimization, and scaling decisions based on performance data.`,
   },
-  },
-  
   {
     id: 'fashion-messaging',
     name: 'Fashion Brand — B2C Performance Marketing',
