@@ -47,10 +47,10 @@ const About = () => {
           download="Ahmed_Abdel_Moati_CV.docx"
           className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-card px-6 py-3 fluid-sm font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
         >
-          <Download className="h-4 w-4" aria-hidden="true" />
           <span>تحميل الـCV</span>
+          <Download className="h-4 w-4" aria-hidden="true" />
         </a>
-        <GoldWaButton withArrow>لو جاهز يلا بينا نبني حملتك الإعلانية من هنا</GoldWaButton>
+        <GoldWaButton withArrow>جاهز؟ خلينا نشتغل على البراند</GoldWaButton>
       </div>
     </motion.section>
   );
