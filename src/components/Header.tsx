@@ -71,7 +71,7 @@ const Header = () => {
           className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         />
         <nav
-          className={`absolute left-0 top-0 h-full w-[78%] max-w-xs border-e border-primary/25 bg-card/95 px-5 pt-6 pb-10 shadow-2xl transition-transform duration-300 ease-out ${
+          className={`absolute left-0 top-0 h-full w-[78%] max-w-xs border-e border-primary/25 bg-card/95 px-5 pt-20 pb-10 shadow-2xl transition-transform duration-300 ease-out ${
             isMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
           aria-label="قائمة الأقسام"
