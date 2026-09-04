@@ -20,6 +20,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
+    <>
     <header className="bg-card/80 backdrop-blur-md border-b border-primary/30 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 md:px-10 py-3 sm:py-4">
         <div className="flex justify-between items-center gap-3">
@@ -55,6 +56,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+    </header>
 
       {/* Mobile side panel (slides in from the left) */}
       <div
@@ -89,7 +91,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-    </header>
+    </>
   );
 };
 
