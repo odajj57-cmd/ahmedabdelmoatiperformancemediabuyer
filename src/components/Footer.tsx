@@ -4,7 +4,7 @@ import { WHATSAPP_URL } from "@/lib/links";
 
 const Footer = () => {
   return (
-    <footer className="bg-background text-foreground py-12 w-full">
+    <footer className="bg-background text-foreground py-8 sm:py-10 w-full">
       <div className="w-full px-4 sm:px-8 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-10 items-start">
           {/* Brand Section */}
@@ -33,7 +33,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="تواصل عبر واتساب"
-              className="relative isolate flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
+              className="relative isolate flex w-full items-center justify-end gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
             >
               <FaWhatsapp
                 aria-hidden="true"

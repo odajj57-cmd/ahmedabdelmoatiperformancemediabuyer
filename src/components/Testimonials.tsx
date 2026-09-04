@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/nomotion';
 import { X } from 'lucide-react';
 import t1 from '@/assets/testimonials/t-10.png.asset.json';
 import t2 from '@/assets/testimonials/t-11.png.asset.json';
@@ -18,7 +18,7 @@ const Testimonials = () => {
     <section
       id="testimonials"
       dir="rtl"
-      className="bg-background py-20 sm:py-24"
+      className="bg-background py-12 sm:py-16"
       aria-labelledby="testimonials-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="fluid-h2 mb-10 text-right font-bold text-primary sm:mb-14"
+          className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-10"
         >
           شهادة من عملائي
         </motion.h2>
@@ -81,7 +81,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.97 }}
               transition={{ duration: 0.25 }}
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               src={zoom}
               alt="شهادة عميل بحجم كامل"
               className="w-full max-w-3xl rounded-2xl border border-gold/30"

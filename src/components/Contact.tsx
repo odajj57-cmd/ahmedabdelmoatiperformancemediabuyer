@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/nomotion';
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import { WHATSAPP_URL, LINKEDIN_URL } from '@/lib/links';
 
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 bg-background relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
       </div>
@@ -16,7 +16,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-8 sm:mb-10"
         >
           <h2 className="fluid-h2 font-bold text-primary">يلا بينا بداية أول حملة إعلانية من هنا</h2>
         </motion.div>

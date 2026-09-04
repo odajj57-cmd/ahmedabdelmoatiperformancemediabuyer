@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "@/lib/nomotion";
 import { Download } from "lucide-react";
 import GoldWaButton from "./GoldWaButton";
 import cvAsset from "@/assets/docs/cv.docx.asset.json";
@@ -22,7 +22,7 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 md:my-20"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-10"
       aria-labelledby="about-heading"
     >
       <h2 id="about-heading" className="sr-only">أنا مين</h2>
@@ -47,10 +47,10 @@ const About = () => {
           download="Ahmed_Abdel_Moati_CV.docx"
           className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-card px-6 py-3 fluid-sm font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
         >
-          <Download className="h-4 w-4" aria-hidden="true" />
           <span>تحميل الـCV</span>
+          <Download className="h-4 w-4" aria-hidden="true" />
         </a>
-        <GoldWaButton withArrow>لو جاهز يلا بينا نبني حملتك الإعلانية من هنا</GoldWaButton>
+        <GoldWaButton withArrow>جاهز؟ خلينا نشتغل على البراند</GoldWaButton>
       </div>
     </motion.section>
   );

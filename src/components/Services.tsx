@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/nomotion';
 import { ChevronDown, ArrowUpLeft } from 'lucide-react';
 import { WHATSAPP_URL } from '@/lib/links';
 
@@ -27,7 +27,7 @@ const Services = () => {
     <section
       id="services"
       dir="rtl"
-      className="bg-background py-20 sm:py-24"
+      className="bg-background py-12 sm:py-16"
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -37,7 +37,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="fluid-h2 mb-10 text-right font-bold text-primary sm:mb-14"
+          className="fluid-h2 mb-8 text-right font-bold text-primary sm:mb-10"
         >
           الخدمات إلي بعملها
         </motion.h2>
@@ -53,7 +53,7 @@ const Services = () => {
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                   aria-expanded={isOpen}
                   aria-controls={`service-body-${index}`}
-                  className="flex w-full items-center justify-between gap-5 py-5 text-right text-foreground transition-colors hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-6"
+                  className={`flex w-full items-center justify-between gap-4 py-4 text-right transition-colors hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-5 ${isOpen ? "text-primary" : "text-foreground"}`}
                 >
                   <span className="fluid-body font-bold">{item.title}</span>
                   <ChevronDown

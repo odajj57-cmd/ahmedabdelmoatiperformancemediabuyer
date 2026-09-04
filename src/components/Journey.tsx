@@ -181,7 +181,7 @@ const Journey = () => {
   };
 
   return (
-    <section id="journey" className="py-20 sm:py-24 bg-background relative overflow-hidden">
+    <section id="journey" className="py-12 sm:py-16 bg-background relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
         <div className="absolute top-1/2 left-1/3 w-[420px] h-[420px] bg-accent rounded-full blur-[150px]" />
       </div>
@@ -192,7 +192,7 @@ const Journey = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-12 sm:mb-16"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-8 sm:mb-10"
         >
           إزاي بشتغل؟
         </motion.h2>
