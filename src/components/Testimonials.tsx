@@ -81,7 +81,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.97 }}
               transition={{ duration: 0.25 }}
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               src={zoom}
               alt="شهادة عميل بحجم كامل"
               className="w-full max-w-3xl rounded-2xl border border-gold/30"

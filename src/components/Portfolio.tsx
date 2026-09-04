@@ -391,7 +391,7 @@ const Portfolio = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.98 }}
               transition={{ duration: 0.3 }}
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               className="relative w-full max-w-5xl rounded-3xl border border-gold/30 bg-card/95 backdrop-blur-xl p-5 sm:p-10 shadow-[0_25px_80px_-25px_oklch(0.78_0.16_82_/_0.5)]"
             >
               <button
