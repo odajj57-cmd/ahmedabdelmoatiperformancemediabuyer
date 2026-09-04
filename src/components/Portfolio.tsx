@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/nomotion';
 import { X, ArrowUpLeft, ImageIcon } from 'lucide-react';
 import { WHATSAPP_URL } from '@/lib/links';
 import caseImage from '@/assets/cases/case-image.png.asset.json';
@@ -316,14 +316,14 @@ const Portfolio = () => {
   const [active, setActive] = useState<CaseStudy | null>(null);
 
   return (
-    <section id="portfolio" className="py-20 sm:py-24 bg-background relative overflow-hidden">
+    <section id="portfolio" className="py-12 sm:py-16 bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-8 sm:mb-10"
         >
           <h2 className="fluid-h2 font-bold text-primary">
             حملات إعلانية لبراندات إشتغلت عليها

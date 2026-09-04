@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "@/lib/nomotion";
 
 const faqItems = [
   {
@@ -48,7 +48,7 @@ const FAQ = () => {
     <section
       id="faq"
       dir="rtl"
-      className="bg-background py-20 sm:py-24"
+      className="bg-background py-12 sm:py-16"
       aria-labelledby="faq-heading"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -58,7 +58,7 @@ const FAQ = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-14"
+          className="fluid-h2 mb-8 text-center font-bold text-primary sm:mb-10"
         >
           أسئلة تهمك
         </motion.h2>

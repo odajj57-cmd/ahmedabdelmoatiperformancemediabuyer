@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "@/lib/nomotion";
 import { Download } from "lucide-react";
 import GoldWaButton from "./GoldWaButton";
 import cvAsset from "@/assets/docs/cv.docx.asset.json";
@@ -22,7 +22,7 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 md:my-20"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-10"
       aria-labelledby="about-heading"
     >
       <h2 id="about-heading" className="sr-only">أنا مين</h2>
