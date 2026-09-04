@@ -35,14 +35,14 @@ const GoldWaButton = ({
 
   if (as === "button") {
     return (
-      <button type="button" onClick={onClick} className={classes}>
+      <button type="button" data-cta="wa" onClick={onClick} className={classes}>
         {inner}
       </button>
     );
   }
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+    <a href={href} data-cta="wa" target="_blank" rel="noopener noreferrer" className={classes}>
       {inner}
     </a>
   );
