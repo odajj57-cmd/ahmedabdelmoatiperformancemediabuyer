@@ -1,6 +1,5 @@
-import { FaWhatsapp } from "react-icons/fa";
-import { ArrowUpLeft } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/links";
+import { Phone } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/links";
 
 const Footer = () => {
   return (
@@ -29,17 +28,13 @@ const Footer = () => {
             </h3>
 
             <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="تواصل عبر واتساب"
-              className="relative isolate flex w-full items-center justify-end gap-2 overflow-hidden rounded-full bg-gold-rich px-8 py-5 fluid-label font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.02]"
+              href={PHONE_TEL}
+              dir="ltr"
+              aria-label={`اتصل على ${PHONE_DISPLAY}`}
+              className="fluid-h3 font-extrabold tracking-widest text-primary transition-colors hover:text-accent"
             >
-              <FaWhatsapp
-                aria-hidden="true"
-                className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
-              />
-              <ArrowUpLeft className="relative z-10 h-5 w-5" aria-hidden="true" />
+              <Phone className="inline h-5 w-5 me-2 align-middle" aria-hidden="true" />
+              {PHONE_DISPLAY}
             </a>
 
           </div>

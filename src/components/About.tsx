@@ -42,6 +42,7 @@ const About = () => {
       </p>
 
       <div className="flex flex-wrap gap-3 justify-end items-center">
+        <GoldWaButton withArrow>جاهز؟ خلينا نشتغل على البراند</GoldWaButton>
         <a
           href={cvAsset.url}
           download="Ahmed_Abdel_Moati_CV.docx"
@@ -50,7 +51,6 @@ const About = () => {
           <span>تحميل الـCV</span>
           <Download className="h-4 w-4" aria-hidden="true" />
         </a>
-        <GoldWaButton withArrow>جاهز؟ خلينا نشتغل على البراند</GoldWaButton>
       </div>
     </motion.section>
   );

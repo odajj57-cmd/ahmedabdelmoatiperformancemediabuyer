@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { WHATSAPP_URL } from "@/lib/links";
+import { FLOATING_WA_URL } from "@/lib/links";
 
 /**
  * Floating gold WhatsApp button, bottom-left.
@@ -42,17 +42,18 @@ const FloatingWa = () => {
 
   return (
     <a
-      href={WHATSAPP_URL}
+      href={FLOATING_WA_URL}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="تواصل عبر واتساب"
+      aria-label="يلا استشارة مجانية عبر واتساب"
       aria-hidden={!show}
       tabIndex={show ? 0 : -1}
-      className={`fixed bottom-5 left-5 z-[90] grid h-14 w-14 place-items-center rounded-full bg-gold-rich text-gold-rich-foreground shadow-[0_10px_30px_-8px_oklch(0.78_0.16_82_/_0.6)] transition-all duration-300 hover:brightness-110 hover:scale-105 ${
+      className={`fixed bottom-5 left-5 z-[90] inline-flex h-14 items-center gap-2 rounded-full bg-gold-rich px-5 fluid-sm font-bold text-gold-rich-foreground shadow-[0_10px_30px_-8px_oklch(0.78_0.16_82_/_0.6)] transition-all duration-300 hover:brightness-110 hover:scale-105 ${
         show ? "opacity-100 translate-y-0" : "pointer-events-none opacity-0 translate-y-4"
       }`}
     >
-      <FaWhatsapp className="h-7 w-7" aria-hidden="true" />
+      <FaWhatsapp className="h-6 w-6" aria-hidden="true" />
+      <span>يلا استشارة مجانية</span>
     </a>
   );
 };

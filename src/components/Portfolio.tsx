@@ -12,7 +12,7 @@ import card8 from '@/assets/cases/card-8.png.asset.json';
 import card9 from '@/assets/cases/card-9.png.asset.json';
 
 const CTA_TEXT =
-  'جاهز تحول بيانات حملتك الإعلانية لقرارات مربحة تحقق هدف البراند؟ دوس هنا';
+  'من الإعلان لشراء المنتج أو الخدمة جاهز نبني Funnle ونحول البيانات لقرارات ربحية تحقق هدف البراند؟';
 
 interface CaseStudy {
   id: string;
