@@ -88,15 +88,18 @@ const Services = () => {
         </div>
 
         <div className="mt-8 text-left">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105"
-          >
-            <span className="relative z-10">عندك منتج وعايز تبني حملة إعلانية؟</span>
-            <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
-          </a>
+          <span className="inline-flex w-fit flex-col items-center gap-1.5">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105"
+            >
+              <span className="relative z-10">عندك منتج وعايز تبني حملة إعلانية؟</span>
+              <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
+            </a>
+            <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+          </span>
         </div>
       </div>
     </section>
