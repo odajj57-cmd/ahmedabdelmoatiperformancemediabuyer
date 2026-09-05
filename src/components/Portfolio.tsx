@@ -361,14 +361,17 @@ const Portfolio = () => {
               <div className="flex flex-1 flex-col p-5 sm:p-6 text-right">
                 <p className="fluid-body text-foreground mb-6">{cs.short}</p>
 
-                <button
-                  type="button"
-                  onClick={() => setActive(cs)}
-                  className="mt-auto inline-flex w-fit items-center justify-start gap-1.5 self-start rounded-full bg-gold-rich px-4 py-2.5 fluid-label font-bold text-gold-rich-foreground transition-all hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ms-4"
-                >
-                  <span>شوف أرقام الحملة وطريقة التنفيذ</span>
-                  <ArrowUpLeft className="h-3.5 w-3.5" aria-hidden="true" />
-                </button>
+                <div className="mt-auto flex flex-col items-center gap-1.5 self-start">
+                  <button
+                    type="button"
+                    onClick={() => setActive(cs)}
+                    className="inline-flex w-fit items-center justify-start gap-1.5 rounded-full bg-gold-rich px-4 py-2.5 fluid-label font-bold text-gold-rich-foreground transition-all hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ms-4"
+                  >
+                    <span>شوف أرقام الحملة وطريقة التنفيذ</span>
+                    <ArrowUpLeft className="h-3.5 w-3.5" aria-hidden="true" />
+                  </button>
+                  <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+                </div>
               </div>
             </motion.article>
           ))}
