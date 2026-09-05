@@ -14,7 +14,7 @@ const title = "Ahmed Abdel Moati | Performance Marketer";
 const description =
   "Performance Marketer | Web Conversion Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة";
 const OG_IMAGE =
-  "https://ahmedabdelmoati-performanmarkter.lovable.app/__l5e/assets-v1/3027f74e-4631-4467-97ce-629572cb082c/og-cover.png";
+  "https://ahmedabdelmoati-performanmarkter.lovable.app/__l5e/assets-v1/8bccd553-9bca-4c8d-8610-e3a0ed3d8078/og-cover.jpg";
 
 
 
