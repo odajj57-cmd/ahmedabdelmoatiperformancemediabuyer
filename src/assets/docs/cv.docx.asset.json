@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "6a101b3e-0d89-4dfb-a3be-60445b6555bf",
-  "project_id": "029145cf-ec58-4d5a-bc79-af7eedd3259d",
-  "url": "/__l5e/assets-v1/6a101b3e-0d89-4dfb-a3be-60445b6555bf/Ahmed_Abdel_Moati_CV.docx",
-  "r2_key": "a/v1/029145cf-ec58-4d5a-bc79-af7eedd3259d/6a101b3e-0d89-4dfb-a3be-60445b6555bf/Ahmed_Abdel_Moati_CV.docx",
-  "original_filename": "Ahmed_Abdel_Moati_CV.docx",
-  "size": 11770,
   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-  "created_at": "2026-09-03T04:47:29Z"
+  "created_at": "2026-09-03T04:47:29Z",
+  "original_filename": "Ahmed_Abdel_Moati_CV.docx",
+  "project_id": "ac685547-3120-45e8-bb06-619f94d31cd9",
+  "r2_key": "a/v1/ac685547-3120-45e8-bb06-619f94d31cd9/6a101b3e-0d89-4dfb-a3be-60445b6555bf/Ahmed_Abdel_Moati_CV.docx",
+  "size": 11770,
+  "url": "/__l5e/assets-v1/6a101b3e-0d89-4dfb-a3be-60445b6555bf/Ahmed_Abdel_Moati_CV.docx",
+  "version": 1
 }
