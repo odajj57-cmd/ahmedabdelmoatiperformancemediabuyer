@@ -12,7 +12,7 @@ import FloatingWa from "@/components/FloatingWa";
 
 const title = "Ahmed Abdel Moati | Performance Marketer";
 const description =
-  "Performance Marketer | Web Conversion Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة";
+  "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات ربحية تحقق هدف البراند";
 const OG_IMAGE =
   "https://ahmedabdelmoati-performanmarkter.lovable.app/__l5e/assets-v1/8bccd553-9bca-4c8d-8610-e3a0ed3d8078/og-cover.jpg";
 

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from '@/lib/nomotion';
 import { X, ArrowUpLeft, ImageIcon } from 'lucide-react';
-import { WHATSAPP_URL } from '@/lib/links';
 import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
@@ -11,8 +10,7 @@ import card7 from '@/assets/cases/card-7.png.asset.json';
 import card8 from '@/assets/cases/card-8.png.asset.json';
 import card9 from '@/assets/cases/card-9.png.asset.json';
 
-const CTA_TEXT =
-  'من الإعلان لشراء المنتج أو الخدمة جاهز نبني Funnle ونحول البيانات لقرارات ربحية تحقق هدف البراند؟';
+
 
 interface CaseStudy {
   id: string;
@@ -423,16 +421,6 @@ const Portfolio = () => {
                 />
               )}
 
-              <div className="text-right">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="fluid-sm font-semibold text-gold-rich underline-offset-4 hover:underline"
-                >
-                  {CTA_TEXT}
-                </a>
-              </div>
             </motion.div>
           </motion.div>
         )}
