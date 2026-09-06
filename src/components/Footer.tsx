@@ -1,4 +1,3 @@
-import { Phone } from "lucide-react";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/links";
 
 const Footer = () => {
