@@ -423,16 +423,6 @@ const Portfolio = () => {
                 />
               )}
 
-              <div className="text-right">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="fluid-sm font-semibold text-gold-rich underline-offset-4 hover:underline"
-                >
-                  {CTA_TEXT}
-                </a>
-              </div>
             </motion.div>
           </motion.div>
         )}

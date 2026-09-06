@@ -33,7 +33,6 @@ const Footer = () => {
               aria-label={`اتصل على ${PHONE_DISPLAY}`}
               className="fluid-h3 font-extrabold tracking-widest text-primary transition-colors hover:text-accent"
             >
-              <Phone className="inline h-5 w-5 me-2 align-middle" aria-hidden="true" />
               {PHONE_DISPLAY}
             </a>
 
