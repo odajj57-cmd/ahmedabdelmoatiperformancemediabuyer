@@ -31,17 +31,17 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="تواصل معي عبر واتساب"
-            className="group relative isolate flex flex-col items-center justify-center w-full overflow-hidden bg-[hsl(142,70%,45%)] hover:bg-[hsl(142,70%,40%)] text-white rounded-2xl py-4 sm:py-5 px-5 sm:px-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-[hsl(142,70%,45%)]/30"
+            className="group relative isolate flex flex-col items-center justify-center w-full overflow-hidden rounded-full bg-gold-rich px-6 py-4 sm:py-5 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105"
           >
             <FaWhatsapp
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
             />
-            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
+            <span className="relative z-10 fluid-h3 font-bold mb-2 text-center text-gold-rich-foreground">
               من الإعلان لشراء المنتج أو الخدمة جاهز نبني Funnel ونحول البيانات لقرارات ربحية في
               البراند؟
             </span>
-            <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
+            <span className="relative z-10 fluid-label text-gold-rich-foreground/80 font-semibold">*دوس على الشريط*</span>
           </motion.a>
 
           <motion.a
