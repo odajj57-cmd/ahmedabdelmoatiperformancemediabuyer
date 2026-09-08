@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Journey from "@/components/Journey";
@@ -10,7 +11,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingWa from "@/components/FloatingWa";
 
-const title = "Ahmed Abdel Moati | Performance Marketer";
+const title = "Ahmed Abdel Moati | Performance Media Buyer Specialist";
 const description =
   "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات ربحية تحقق هدف البراند";
 const OG_IMAGE =
@@ -48,6 +49,7 @@ function Index() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-grow">
+        <Hero />
         <About />
         <Services />
         <Journey />

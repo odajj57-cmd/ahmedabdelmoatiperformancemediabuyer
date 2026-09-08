@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import LabExperience from "@/components/lab/LabExperience";
 
-const title = "Ahmed Abdel Moati — Performance Marketer";
+const title = "Ahmed Abdel Moati — Performance Media Buyer Specialist";
 const description =
   "A standalone motion lab: premium loading screen and smooth progressive scroll reveals.";
 

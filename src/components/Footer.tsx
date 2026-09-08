@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-10 items-start">
           {/* Brand Section */}
           <div className="w-full text-center md:text-right md:justify-self-end">
-            <h3 className="fluid-h3 font-bold text-primary mb-3 sm:mb-4">Performance Marketer</h3>
+            <h3 className="fluid-h3 font-bold text-primary mb-3 sm:mb-4">Performance Media Buyer Specialist</h3>
             <p className="fluid-sm text-foreground">
               من الإعلان لشراء المنتج بحول البيانات لقرارات ربحية في البراند
             </p>
