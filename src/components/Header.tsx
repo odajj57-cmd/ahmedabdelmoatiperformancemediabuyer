@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const links = [
+  { href: '#home', label: 'الرئيسية' },
   { href: '#about', label: 'أنا مين' },
   { href: '#services', label: 'بعمل إيه' },
   { href: '#portfolio', label: 'نتائج وأرقام' },
   { href: '#testimonials', label: 'قالو عني' },
   { href: '#contact', label: 'يلا نبدأ' },
 ];
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
