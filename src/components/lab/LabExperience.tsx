@@ -57,7 +57,7 @@ const LabExperience = () => {
             Ahmed Abdel Moati
           </Reveal>
           <Reveal delay={80} as="p" className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Performance Marketer turning campaign data into profitable business decisions.
+            Performance Media Buyer Specialist turning campaign data into profitable business decisions.
           </Reveal>
           <Reveal delay={160} className="mt-8 flex flex-wrap gap-3">
             <a
