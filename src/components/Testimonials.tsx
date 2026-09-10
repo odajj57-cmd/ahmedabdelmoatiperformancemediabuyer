@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from '@/lib/nomotion';
 import { X } from 'lucide-react';
-import t1 from '@/assets/testimonials/IMG-20260906-WA0040.jpg.asset.json';
-import t2 from '@/assets/testimonials/IMG-20260906-WA0041.jpg.asset.json';
-import t3 from '@/assets/testimonials/IMG-20260906-WA0044.jpg.asset.json';
+import t1 from '@/assets/testimonials/testi-11.png.asset.json';
+import t2 from '@/assets/testimonials/testi-12.png.asset.json';
+import t3 from '@/assets/testimonials/testi-13.png.asset.json';
 
 const testimonials = [
   { id: 't1', url: t1.url, alt: 'توصية من Ibrahim Elkassem على فيسبوك' },

@@ -63,7 +63,7 @@ const FloatingWa = () => {
         <span className="relative z-10">يلا استشارة مجانية</span>
         <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
       </a>
-      <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+      <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
     </div>
   );
 };

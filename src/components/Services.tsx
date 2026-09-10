@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from '@/lib/nomotion';
-import { ChevronDown, ArrowUpLeft } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import { WHATSAPP_URL } from '@/lib/links';
 
 const services = [
@@ -95,10 +95,10 @@ const Services = () => {
               rel="noopener noreferrer"
               className="relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105"
             >
-              <span className="relative z-10">عندك منتج وعايز تبني حملة إعلانية؟</span>
-              <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />
+              <span className="relative z-10" dir="ltr">Get In Touch</span>
+              <ArrowRight className="relative z-10 h-4 w-4" aria-hidden="true" />
             </a>
-            <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+            <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
           </span>
         </div>
       </div>
