@@ -5,10 +5,10 @@ import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
 import caseImage4 from '@/assets/cases/case-image-4.png.asset.json';
-import card6 from '@/assets/cases/card-6.png.asset.json';
-import card7 from '@/assets/cases/card-7.png.asset.json';
-import card8 from '@/assets/cases/card-8.png.asset.json';
-import card9 from '@/assets/cases/card-9.png.asset.json';
+import card6 from '@/assets/cases/cover-c7.png.asset.json';
+import card7 from '@/assets/cases/cover-c8.png.asset.json';
+import card8 from '@/assets/cases/cover-c9.png.asset.json';
+import card9 from '@/assets/cases/cover-c10.png.asset.json';
 
 
 
@@ -18,6 +18,7 @@ interface CaseStudy {
   cover: string;
   proof: string;
   short: string;
+  stats: { value: string; label: string }[];
   details: string;
 }
 
