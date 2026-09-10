@@ -5,10 +5,10 @@ import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
 import caseImage4 from '@/assets/cases/case-image-4.png.asset.json';
-import card6 from '@/assets/cases/card-6.png.asset.json';
-import card7 from '@/assets/cases/card-7.png.asset.json';
-import card8 from '@/assets/cases/card-8.png.asset.json';
-import card9 from '@/assets/cases/card-9.png.asset.json';
+import card6 from '@/assets/cases/cover-c7.png.asset.json';
+import card7 from '@/assets/cases/cover-c8.png.asset.json';
+import card8 from '@/assets/cases/cover-c9.png.asset.json';
+import card9 from '@/assets/cases/cover-c10.png.asset.json';
 
 
 
@@ -18,6 +18,7 @@ interface CaseStudy {
   cover: string;
   proof: string;
   short: string;
+  stats: { value: string; label: string }[];
   details: string;
 }
 
@@ -27,6 +28,11 @@ const caseStudies: CaseStudy[] = [{
     cover: card6.url,
     proof: caseImage2.url,
     short: 'من 30 ألف جنيه ل 1.05 مليون جنيه مبيعات محققين بعائد إنفاق 35 ضعف في 45 يوم',
+    stats: [
+      { value: '1.05M', label: 'EGP Revenue' },
+      { value: '35X', label: 'ROAS' },
+      { value: '45', label: 'Days' },
+    ],
     details: `Turning 30K EGP Ad Spend into 1.05M EGP Revenue
 ROAS: 35X | 45 Days | 35 Orders
 
@@ -91,6 +97,11 @@ Performance Marketer / Media Buyer — Owned the campaign strategy, audience tes
     proof: caseImage3.url,
     short:
       '257 ألف جنيه مبيعات من 27 ألف جنيه إعلانية، بعد اختبار 4 موديلات وتحديد الـWinner بعائد إنفاق 9 أضعاف ونص',
+    stats: [
+      { value: '257K', label: 'EGP Sales' },
+      { value: '9.5X', label: 'ROAS' },
+      { value: '29', label: 'Days' },
+    ],
     details: `4 Models Tested → 1 Winner → 257,399 EGP Sales
 27K EGP Ad Spend | 29 Days | ROAS 9.5X
 
@@ -153,6 +164,11 @@ Performance Marketer / Media Buyer — Owned the product testing, creative testi
     cover: card8.url,
     proof: caseImage4.url,
     short: '2404 رسالة بتكلفة وصلت لـ1.44 جنيه بإنخفاض 65٪',
+    stats: [
+      { value: '2,404', label: 'Conversations' },
+      { value: '1.44', label: 'EGP / Message' },
+      { value: '-65%', label: 'Cost' },
+    ],
     details: `Scaling Messaging Conversations While Reducing Cost per Message
 4.94K EGP Ad Spend | 2,404 Conversations | Cost Dropped from 4.16 → 1.44 EGP
 
@@ -227,6 +243,11 @@ Performance Marketer / Media Buyer — Owned the funnel strategy, sales angle te
     cover: card9.url,
     proof: caseImage.url,
     short: 'أكثر من 62 ألف شخص و93 ألف مشاهدة محتوى مع توليد 25 Lead و30 محادثة',
+    stats: [
+      { value: '62K+', label: 'New Reach' },
+      { value: '93K', label: 'Content Views' },
+      { value: '55', label: 'Leads + Chats' },
+    ],
     details: `The Goal
 Build a new audience base and lead generation channel worth EGP 15,000 in 30 days
 93,000 impressions and content views | Reach over 62,000 new people | 25 lead collection forms | 30 message conversations
@@ -338,38 +359,44 @@ const Portfolio = () => {
               transition={{ duration: 0.5 }}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-colors duration-500 hover:border-gold/40"
             >
-              <div className="overflow-hidden bg-background">
+              <div className="border-b border-border/50 bg-background/60">
                 {cs.cover ? (
                   <img
                     src={cs.cover}
                     alt={`غلاف حملة ${cs.name}`}
                     loading="lazy"
-                    className="w-full h-40 sm:h-44 object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    className="aspect-[4/3] w-full object-contain"
                   />
                 ) : (
                   <div
                     aria-hidden="true"
-                    className="flex h-40 sm:h-44 w-full items-center justify-center border-b border-border/60 bg-muted/30"
+                    className="flex aspect-[4/3] w-full items-center justify-center bg-muted/30"
                   >
                     <ImageIcon className="h-8 w-8 text-muted-foreground/40" />
                   </div>
                 )}
               </div>
 
-              <div className="flex flex-1 flex-col p-5 sm:p-6 text-right">
-                <p className="fluid-body text-foreground mb-6">{cs.short}</p>
-
-                <div className="mt-auto flex flex-col items-center gap-1.5 self-start">
-                  <button
-                    type="button"
-                    onClick={() => setActive(cs)}
-                    className="inline-flex w-fit items-center justify-start gap-1.5 rounded-full bg-gold-rich px-4 py-2.5 fluid-label font-bold text-gold-rich-foreground transition-all hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ms-4"
-                  >
-                    <span>شوف أرقام الحملة وطريقة التنفيذ</span>
-                    <ArrowUpLeft className="h-3.5 w-3.5" aria-hidden="true" />
-                  </button>
-                  <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+              <div className="flex flex-1 flex-col gap-3 p-4 text-right sm:p-5">
+                <div dir="ltr" className="grid grid-cols-3 gap-2">
+                  {cs.stats.map((s) => (
+                    <div key={s.label} className="min-w-0 text-center">
+                      <p className="fluid-h3 font-extrabold leading-tight text-primary">{s.value}</p>
+                      <p className="fluid-label leading-tight text-muted-foreground">{s.label}</p>
+                    </div>
+                  ))}
                 </div>
+
+                <p className="fluid-sm leading-relaxed text-foreground/90">{cs.short}</p>
+
+                <button
+                  type="button"
+                  onClick={() => setActive(cs)}
+                  className="mt-auto inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-gold/50 bg-gold-rich/10 px-4 py-2 fluid-label font-bold text-primary transition-all hover:bg-gold-rich hover:text-gold-rich-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <span>شوف أرقام الحملة وطريقة التنفيذ</span>
+                  <ArrowUpLeft className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                </button>
               </div>
             </motion.article>
           ))}

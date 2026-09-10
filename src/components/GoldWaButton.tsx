@@ -51,7 +51,7 @@ const GoldWaButton = ({
   return (
     <span className="inline-flex w-fit flex-col items-center gap-1.5">
       {bar}
-      <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+      <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
     </span>
   );
 };

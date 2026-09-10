@@ -1,4 +1,4 @@
-import { ArrowUpLeft, Download } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import cvAsset from "@/assets/docs/cv.docx.asset.json";
 
 const Hero = () => {
@@ -16,44 +16,44 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <h1 id="hero-heading" className="fluid-h1 font-bold text-primary">
-          Social Media And Performance Media Buyer Specialist
+          Social Media Specialist And Performance Media Buyer
         </h1>
 
         <p className="fluid-lead mt-3 font-semibold text-foreground" dir="ltr">
           Content-Aware. Data-Driven. Performance-Focused.
         </p>
 
-        <p className="fluid-body mt-6 font-bold text-primary">
-          خبرة سنتين في الـDigital Marketing
-        </p>
-
-        <p className="fluid-body mt-2 max-w-3xl leading-loose text-foreground">
+        <p className="fluid-body mt-6 max-w-3xl leading-loose text-foreground">
           متخصص فى إدارة وتحسين الحملات الإعلانية تحليل أداء المحتوى والجمهور وبناء اختبارات تساعد
           الـBrands تحقق نتائج أفضل.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-start gap-4">
+        <div className="mt-6">
           <a
             href="#portfolio"
+            dir="ltr"
             className="relative inline-flex w-fit items-center justify-center gap-2 rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110"
           >
             <span>View My Work</span>
-            <ArrowUpLeft className="h-4 w-4" aria-hidden="true" />
-          </a>
-
-          <a
-            href={cvAsset.url}
-            download="Ahmed_Abdel_Moati_CV.docx"
-            className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-card px-6 py-3 fluid-sm font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
-          >
-            <Download className="h-4 w-4" aria-hidden="true" />
-            <span>View My CV</span>
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
 
         <p className="fluid-sm mt-4 text-muted-foreground">
           شوف الـCase Studies والـStrategy والنتائج وراء كل Campaign.
         </p>
+
+        <div className="mt-6">
+          <a
+            href={cvAsset.url}
+            download="Ahmed_Abdel_Moati_CV.docx"
+            dir="ltr"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary px-6 py-3 fluid-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:brightness-110"
+          >
+            <Download className="h-4 w-4" aria-hidden="true" />
+            <span>View My CV</span>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,14 +1,6 @@
-export const WHATSAPP_URL =
-  "https://wa.me/201003446823?text=" +
-  encodeURIComponent(
-    "السلام عليكم ورحمة الله تعالى وبركاته، شفت البرتوفليو بتاعك، وعايز أعرف أكتر عن خدماتك؟",
-  );
+export const WHATSAPP_URL = "https://wa.me/201003446823";
 
-export const FLOATING_WA_URL =
-  "https://wa.me/201003446823?text=" +
-  encodeURIComponent(
-    "السلام عليكم ورحمة الله تعالى وبركاته، عندي مشكلة في البراند وعايز مساعدتك؟",
-  );
+export const FLOATING_WA_URL = "https://wa.me/201003446823";
 
 export const EMAIL = "Mohamedkante158@gmail.com";
 

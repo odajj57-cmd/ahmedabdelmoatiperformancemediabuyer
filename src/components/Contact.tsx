@@ -18,7 +18,9 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-10"
         >
-          <h2 className="fluid-h2 font-bold text-primary">يلا بينا بداية أول حملة إعلانية من هنا</h2>
+          <h2 className="fluid-h2 font-bold text-primary">
+            محتاج Performance Media Buyer Specialist؟ خلينا نتكلم.
+          </h2>
         </motion.div>
 
         <div className="space-y-4 sm:space-y-6">
@@ -38,8 +40,8 @@ const Contact = () => {
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
             />
             <span className="relative z-10 fluid-h3 font-bold mb-2 text-center text-gold-rich-foreground">
-              من الإعلان لشراء المنتج أو الخدمة جاهز نبني Funnel ونحول البيانات لقرارات ربحية في
-              البراند؟
+              بفهم الـSocial Media والـContent والـPerformance Media Buying بقرأ الـData وأحدد فرص
+              التحسين وأحولها لـTests وInsights واضحة يقدر الـContent والـDesign Team يشتغل عليها.
             </span>
             <span className="relative z-10 fluid-label text-gold-rich-foreground/80 font-semibold">*دوس على الشريط*</span>
           </motion.a>
