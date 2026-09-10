@@ -359,38 +359,44 @@ const Portfolio = () => {
               transition={{ duration: 0.5 }}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-colors duration-500 hover:border-gold/40"
             >
-              <div className="overflow-hidden bg-background">
+              <div className="border-b border-border/50 bg-background/60">
                 {cs.cover ? (
                   <img
                     src={cs.cover}
                     alt={`غلاف حملة ${cs.name}`}
                     loading="lazy"
-                    className="w-full h-40 sm:h-44 object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    className="aspect-[4/3] w-full object-contain"
                   />
                 ) : (
                   <div
                     aria-hidden="true"
-                    className="flex h-40 sm:h-44 w-full items-center justify-center border-b border-border/60 bg-muted/30"
+                    className="flex aspect-[4/3] w-full items-center justify-center bg-muted/30"
                   >
                     <ImageIcon className="h-8 w-8 text-muted-foreground/40" />
                   </div>
                 )}
               </div>
 
-              <div className="flex flex-1 flex-col p-5 sm:p-6 text-right">
-                <p className="fluid-body text-foreground mb-6">{cs.short}</p>
-
-                <div className="mt-auto flex flex-col items-center gap-1.5 self-start">
-                  <button
-                    type="button"
-                    onClick={() => setActive(cs)}
-                    className="inline-flex w-fit items-center justify-start gap-1.5 rounded-full bg-gold-rich px-4 py-2.5 fluid-label font-bold text-gold-rich-foreground transition-all hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ms-4"
-                  >
-                    <span>شوف أرقام الحملة وطريقة التنفيذ</span>
-                    <ArrowUpLeft className="h-3.5 w-3.5" aria-hidden="true" />
-                  </button>
-                  <span className="fluid-label text-muted-foreground">*دوس على الشريط*</span>
+              <div className="flex flex-1 flex-col gap-3 p-4 text-right sm:p-5">
+                <div dir="ltr" className="grid grid-cols-3 gap-2">
+                  {cs.stats.map((s) => (
+                    <div key={s.label} className="min-w-0 text-center">
+                      <p className="fluid-h3 font-extrabold leading-tight text-primary">{s.value}</p>
+                      <p className="fluid-label leading-tight text-muted-foreground">{s.label}</p>
+                    </div>
+                  ))}
                 </div>
+
+                <p className="fluid-sm leading-relaxed text-foreground/90">{cs.short}</p>
+
+                <button
+                  type="button"
+                  onClick={() => setActive(cs)}
+                  className="mt-auto inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-gold/50 bg-gold-rich/10 px-4 py-2 fluid-label font-bold text-primary transition-all hover:bg-gold-rich hover:text-gold-rich-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <span>شوف أرقام الحملة وطريقة التنفيذ</span>
+                  <ArrowUpLeft className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                </button>
               </div>
             </motion.article>
           ))}
