@@ -335,7 +335,7 @@ const Portfolio = () => {
   const [active, setActive] = useState<CaseStudy | null>(null);
 
   return (
-    <section id="portfolio" className="py-12 sm:py-16 bg-background relative overflow-hidden">
+    <section id="portfolio" className="py-8 sm:py-10 bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -378,16 +378,8 @@ const Portfolio = () => {
               </div>
 
               <div className="flex flex-1 flex-col gap-3 p-4 text-right sm:p-5">
-                <div dir="ltr" className="grid grid-cols-3 gap-2">
-                  {cs.stats.map((s) => (
-                    <div key={s.label} className="min-w-0 text-center">
-                      <p className="fluid-h3 font-extrabold leading-tight text-primary">{s.value}</p>
-                      <p className="fluid-label leading-tight text-muted-foreground">{s.label}</p>
-                    </div>
-                  ))}
-                </div>
-
                 <p className="fluid-sm leading-relaxed text-foreground/90">{cs.short}</p>
+
 
                 <button
                   type="button"

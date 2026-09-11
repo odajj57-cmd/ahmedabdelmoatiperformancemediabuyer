@@ -19,7 +19,7 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-10"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-2 mb-6 sm:mt-3 sm:mb-8"
       aria-labelledby="about-heading"
     >
       <h2 id="about-heading" className="sr-only">أنا مين</h2>

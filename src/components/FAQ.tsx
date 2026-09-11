@@ -43,7 +43,7 @@ const FAQ = () => {
     <section
       id="faq"
       dir="rtl"
-      className="bg-background py-12 sm:py-16"
+      className="bg-background py-8 sm:py-10"
       aria-labelledby="faq-heading"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
