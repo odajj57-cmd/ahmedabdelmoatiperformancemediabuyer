@@ -6,7 +6,7 @@ const Hero = () => {
     <section
       id="home"
       dir="rtl"
-      className="relative overflow-hidden bg-background py-14 sm:py-20"
+      className="relative overflow-hidden bg-background pt-10 pb-6 sm:pt-14 sm:pb-8"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0 opacity-20" aria-hidden="true">
@@ -23,12 +23,27 @@ const Hero = () => {
           Content-Aware. Data-Driven. Performance-Focused.
         </p>
 
+        <div className="mt-5">
+          <a
+            href={cvAsset.url}
+            download="Ahmed_Abdel_Moati_CV.docx"
+            dir="ltr"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary px-6 py-3 fluid-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:brightness-110"
+          >
+            <span>View My CV</span>
+            <Download className="h-4 w-4 text-primary" aria-hidden="true" />
+          </a>
+        </div>
+
         <p className="fluid-body mt-6 max-w-3xl leading-loose text-foreground">
-          متخصص فى إدارة وتحسين الحملات الإعلانية تحليل أداء المحتوى والجمهور وبناء اختبارات تساعد
-          الـBrands تحقق نتائج أفضل.
+          بخبرة سنتين في الـDigital Marketing بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة.
         </p>
 
-        <div className="mt-6">
+        <p className="fluid-sm mt-4 text-foreground">
+          شوف الـCase Studies والـStrategy والنتائج وراء كل Campaign.
+        </p>
+
+        <div className="mt-5 text-left">
           <a
             href="#portfolio"
             dir="ltr"
@@ -36,22 +51,6 @@ const Hero = () => {
           >
             <span>View My Work</span>
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </a>
-        </div>
-
-        <p className="fluid-sm mt-4 text-muted-foreground">
-          شوف الـCase Studies والـStrategy والنتائج وراء كل Campaign.
-        </p>
-
-        <div className="mt-6">
-          <a
-            href={cvAsset.url}
-            download="Ahmed_Abdel_Moati_CV.docx"
-            dir="ltr"
-            className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary px-6 py-3 fluid-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:brightness-110"
-          >
-            <Download className="h-4 w-4" aria-hidden="true" />
-            <span>View My CV</span>
           </a>
         </div>
       </div>

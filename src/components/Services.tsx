@@ -7,18 +7,20 @@ const services = [
   {
     title: 'إدارة الحملات الإعلانية',
     body:
-      'ببني وأدير الحملات الإعلانية على Meta Ads وTikTok Ads وبركز على تحليل وبناء رحلة العميل ومسار التحويل، مع التركيز على استراتيجية الـFunnel وتوليد العملاء وتحسين معدلات التحويل.',
+      'بشتغل على إدارة وتحسين الحملات الإعلانية على Meta Ads وTikTok Ads بداية من فهم الـObjective والـAudience وبناء الـFunnel وتحليل الـData والـTests ثم اتخاذ قرار مبني على النتائج والأرقام وبتعاون بشكل مستمر مع الـContent والـDesign Team لربط الـCreative بأداء الحملات وتحويل الـData والـInsights إلى فرص واضحة لتطوير الـContent والـAds.',
     toolsLabel: 'مهارات وأدوات بستخدمها:',
     tools:
       'GA4 · Meta Pixel · Excel · Google Sheets · ChatGPT · Claude · استراتيجية المحتوى واختبار الحملات وإعادة الاستهداف والتحسين المستمر',
   },
   {
-    title: 'تصميم المواقع وتحسين معدل التحويل',
-    body: 'بصمم مواقع وصفحات هبوط وبركز فيها على شراء العميل بشكل أسرع.',
+    title: 'فهم الـWeb & Conversion',
+    body:
+      'بفهم أساسيات الـLanding Pages وتجربة المستخدم وبحلل رحلة العميل من الـAd للـConversion لتحديد نقاط الاحتكاك وفرص تحسين معدل التحويل.',
     toolsLabel: 'المهارات والأدوات إلي بستخدمها:',
     tools: 'تحليل صفحات الهبوط والتصميم على Shopify · Easy Orders',
   },
 ];
+
 
 const Services = () => {
   const [openIndex, setOpenIndex] = useState(-1);
