@@ -335,7 +335,7 @@ const Portfolio = () => {
   const [active, setActive] = useState<CaseStudy | null>(null);
 
   return (
-    <section id="portfolio" className="py-12 sm:py-16 bg-background relative overflow-hidden">
+    <section id="portfolio" className="py-8 sm:py-10 bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

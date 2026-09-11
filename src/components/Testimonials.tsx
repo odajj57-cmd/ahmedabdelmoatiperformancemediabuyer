@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from '@/lib/nomotion';
 import { X } from 'lucide-react';
 import t1 from '@/assets/testimonials/testi-11.png.asset.json';
 import t2 from '@/assets/testimonials/testi-12.png.asset.json';
-import t3 from '@/assets/testimonials/testi-13.png.asset.json';
+import t3 from '@/assets/testimonials/testi-14.png.asset.json';
 
 const testimonials = [
   { id: 't1', url: t1.url, alt: 'توصية من Ibrahim Elkassem على فيسبوك' },
   { id: 't2', url: t2.url, alt: 'شهادة عميل بالتفصيل عن الشغل والنتائج' },
-  { id: 't3', url: t3.url, alt: 'شهادة م/ إبراهيم القاسم عن الويب سايت' },
+  { id: 't3', url: t3.url, alt: 'محادثة واتساب من عميل عن أداء الإعلان' },
 ];
+
 
 const Testimonials = () => {
   const [zoom, setZoom] = useState<string | null>(null);
@@ -18,7 +19,7 @@ const Testimonials = () => {
     <section
       id="testimonials"
       dir="rtl"
-      className="bg-background py-12 sm:py-16"
+      className="bg-background py-8 sm:py-10"
       aria-labelledby="testimonials-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
