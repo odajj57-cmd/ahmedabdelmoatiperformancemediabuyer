@@ -31,7 +31,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="fluid-h2 mb-10 text-center font-bold text-primary sm:mb-10"
         >
-          شهادة من عملائي
+          آراء من عملائنا
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

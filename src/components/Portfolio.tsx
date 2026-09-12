@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from '@/lib/nomotion';
-import { X, ArrowUpLeft, ImageIcon } from 'lucide-react';
+import { X, CornerUpRight, ImageIcon } from 'lucide-react';
 import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
 import caseImage3 from '@/assets/cases/case-image-3.png.asset.json';
@@ -387,7 +387,7 @@ const Portfolio = () => {
                   className="mt-auto inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-gold/50 bg-gold-rich/10 px-4 py-2 fluid-label font-bold text-primary transition-all hover:bg-gold-rich hover:text-gold-rich-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <span>شوف أرقام الحملة وطريقة التنفيذ</span>
-                  <ArrowUpLeft className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                  <CornerUpRight className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                 </button>
               </div>
             </motion.article>

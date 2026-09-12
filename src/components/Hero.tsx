@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from "lucide-react";
+import { CornerUpRight, Download } from "lucide-react";
 import cvAsset from "@/assets/docs/cv.docx.asset.json";
 
 const Hero = () => {
@@ -50,7 +50,7 @@ const Hero = () => {
             className="relative inline-flex w-fit items-center justify-center gap-2 rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110"
           >
             <span>View My Work</span>
-            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            <CornerUpRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
       </div>

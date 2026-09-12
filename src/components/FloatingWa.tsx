@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { ArrowRight } from "lucide-react";
+import { CornerUpRight } from "lucide-react";
 import { FLOATING_WA_URL } from "@/lib/links";
 
 /**
@@ -62,7 +62,7 @@ const FloatingWa = () => {
           className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
         />
         <span className="relative z-10">Let’s Tal</span>
-        <ArrowRight className="relative z-10 h-4 w-4" aria-hidden="true" />
+        <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
       </a>
 
       <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>

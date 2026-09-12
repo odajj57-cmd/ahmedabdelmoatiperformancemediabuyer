@@ -1,5 +1,5 @@
 import { motion } from "@/lib/nomotion";
-import { ArrowRight } from "lucide-react";
+import { CornerUpRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { WHATSAPP_URL } from "@/lib/links";
 
@@ -24,8 +24,8 @@ const About = () => {
     >
       <h2 id="about-heading" className="sr-only">أنا مين</h2>
 
-      {paragraphs.map((text) => (
-        <p key={text} className="fluid-body text-foreground mb-4 max-w-3xl leading-loose">
+      {paragraphs.map((text, index) => (
+        <p key={text} className={`fluid-body mb-4 max-w-3xl leading-loose ${index === 0 ? "font-semibold text-primary" : "text-foreground"}`}>
           {text}
         </p>
       ))}
@@ -49,7 +49,7 @@ const About = () => {
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
             />
             <span className="relative z-10">Let’s Talk About The Role</span>
-            <ArrowRight className="relative z-10 h-4 w-4" aria-hidden="true" />
+            <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
           </a>
           <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
         </span>
