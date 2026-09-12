@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="w-full flex flex-col justify-start items-center md:items-start text-center md:text-left md:justify-self-start">
             <h3 className="fluid-h3 font-semibold text-primary mb-3 sm:mb-4">
-              يلا نكبر البراند بالأرقام والبيانات
+              من الـData لقرار ومن القرار لنتيجة
             </h3>
 
             <a

@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Performance Media Buyer Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة",
+          "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـTeam على تحسين الأداء وتحقق الـBusiness Goals.",
       },
       { name: "author", content: "Ahmed Abdel Moati" },
       { property: "og:title", content: "Ahmed Abdel Moati | Performance Media Buyer Specialist" },
       {
         property: "og:description",
         content:
-          "Performance Media Buyer Specialist — بعائد مبيعات وصل 35 ضعف وتحسين معدل التحويل 10 أضعاف، بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة",
+          "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـTeam على تحسين الأداء وتحقق الـBusiness Goals.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

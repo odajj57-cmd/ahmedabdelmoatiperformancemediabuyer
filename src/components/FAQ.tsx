@@ -4,6 +4,11 @@ import { motion } from "@/lib/nomotion";
 
 const faqItems = [
   {
+    question: "هل تقدر تشتغل داخل Agency Workflow ومع أكتر من Account؟",
+    answer:
+      "أيوه.\nبقدر أشتغل ضمن Workflow واضح مع الـContent، Design وAccount Management، مع تنظيم الأولويات والـTesting والـReporting لكل Account. وبفضّل يكون لكل Account أهداف وKPIs ومسؤوليات واضحة عشان القرارات تبقى مبنية على الـData.",
+  },
+  {
     question: "إيه اللي تقدر تضيفه للـTeam عشان تحقق هدف البزنس؟",
     answer:
       "بجمع بين فهم الـSocial Media والـContent وبين الـPerformance Media Buying، فمش بتعامل مع الإعلان بشكل منفصل عن الـCreative والـAudience.\nبقدر أقرأ الـData، أحدد فرص التحسين، وأحوّلها لـTests وInsights واضحة يقدر الـContent والـDesign Team يشتغل عليها.",
@@ -27,11 +32,6 @@ const faqItems = [
     question: "إزاي بتتعامل مع Campaign مش محققة الـKPIs؟",
     answer:
       "ببدأ بالتشخيص قبل تغيير كل حاجة مرة واحدة.\nبراجع الـCPM، CTR، CPC، Conversion Rate، CPA/Cost per Lead وجودة الـLeads، وبحدد هل المشكلة في الـAudience، Creative، Offer، Funnel أو Sales Process. بعدها ببني Tests محددة وأقارن النتائج.",
-  },
-  {
-    question: "هل تقدر تشتغل داخل Agency Workflow ومع أكتر من Account؟",
-    answer:
-      "أيوه.\nبقدر أشتغل ضمن Workflow واضح مع الـContent، Design وAccount Management، مع تنظيم الأولويات والـTesting والـReporting لكل Account. وبفضّل يكون لكل Account أهداف وKPIs ومسؤوليات واضحة عشان القرارات تبقى مبنية على الـData.",
   },
 ];
 

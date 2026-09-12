@@ -1,5 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { ArrowUpLeft } from "lucide-react";
+import { CornerUpRight } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/links";
 
 interface Props {
@@ -31,7 +31,7 @@ const GoldWaButton = ({
         className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
       />
       <span className="relative z-10">{children}</span>
-      {withArrow && <ArrowUpLeft className="relative z-10 h-4 w-4" aria-hidden="true" />}
+      {withArrow && <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />}
     </>
   );
 
