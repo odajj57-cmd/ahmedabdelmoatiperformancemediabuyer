@@ -311,6 +311,120 @@
   }
 }
 
+/* Brand experience — seamless RTL marquee */
+.brand-marquee-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.brand-marquee-shell::before,
+.brand-marquee-shell::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  z-index: 2;
+  width: clamp(1.5rem, 6vw, 5rem);
+  pointer-events: none;
+}
+
+.brand-marquee-shell::before {
+  inset-inline-start: 0;
+  background: linear-gradient(to left, var(--background), transparent);
+}
+
+.brand-marquee-shell::after {
+  inset-inline-end: 0;
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+.brand-marquee-viewport {
+  direction: ltr;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  touch-action: pan-x;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+}
+
+.brand-marquee-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-marquee-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.brand-marquee-track {
+  display: flex;
+  width: max-content;
+  transform: translate3d(0, 0, 0);
+  animation: brand-marquee 46s linear infinite;
+  will-change: transform;
+}
+
+.brand-marquee-track.is-paused {
+  animation-play-state: paused;
+}
+
+.brand-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
+  padding-inline-end: 1rem;
+}
+
+.brand-card {
+  width: clamp(15rem, 72vw, 17rem);
+  aspect-ratio: 1 / 1;
+  flex: none;
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--border) 75%, transparent);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: 0 12px 32px color-mix(in oklab, var(--background) 78%, transparent);
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    transform 250ms ease;
+}
+
+.brand-card:hover {
+  z-index: 1;
+  border-color: var(--gold-rich);
+  box-shadow: 0 14px 36px color-mix(in oklab, var(--gold-rich) 18%, transparent);
+  transform: scale(1.04);
+}
+
+@keyframes brand-marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (min-width: 640px) {
+  .brand-marquee-group {
+    gap: 1.25rem;
+    padding-inline-end: 1.25rem;
+  }
+
+  .brand-card {
+    width: 14.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-marquee-track {
+    animation: none;
+  }
+
+  .brand-card,
+  .brand-card img {
+    transition: none;
+  }
+}
+
 /* Prevent any horizontal overflow on small screens */
 html,
 body {

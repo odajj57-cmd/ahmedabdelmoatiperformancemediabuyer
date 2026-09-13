@@ -5,7 +5,7 @@ import { WHATSAPP_URL } from '@/lib/links';
 
 const services = [
   {
-    title: 'إدارة الحملات الإعلانية',
+    title: 'إدارة وتحسين الحملات الإعلانية',
     body:
       'بشتغل على إدارة وتحسين الحملات الإعلانية على Meta Ads وTikTok Ads بداية من فهم الـObjective والـAudience وبناء الـFunnel وتحليل الـData والـTests ثم اتخاذ قرار مبني على النتائج والأرقام وبتعاون بشكل مستمر مع الـContent والـDesign Team لربط الـCreative بأداء الحملات وتحويل الـData والـInsights إلى فرص واضحة لتطوير الـContent والـAds.',
     toolsLabel: 'مهارات وأدوات بستخدمها:',

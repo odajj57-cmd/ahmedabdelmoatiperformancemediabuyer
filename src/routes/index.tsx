@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 
 import Portfolio from "@/components/Portfolio";
+import BrandExperience from "@/components/BrandExperience";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -54,6 +55,7 @@ function Index() {
         <Services />
         
         <Portfolio />
+        <BrandExperience />
         <Testimonials />
         <FAQ />
         <Contact />
