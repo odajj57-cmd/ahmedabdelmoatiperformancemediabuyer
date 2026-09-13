@@ -44,7 +44,6 @@ const Contact = () => {
               بفهم الـSocial Media والـContent والـPerformance Media Buying بقرأ الـData وأحدد فرص
               التحسين وأحولها لـTests وInsights واضحة يقدر الـContent والـDesign Team يشتغل عليها.
             </span>
-            <CornerUpRight className="relative z-10 mb-1 h-5 w-5" aria-hidden="true" />
             <span className="relative z-10 fluid-label text-gold-rich-foreground/80 font-semibold">*دوس على الشريط*</span>
           </motion.a>
 
@@ -66,7 +65,6 @@ const Contact = () => {
             <span className="relative z-10 fluid-h3 font-bold mb-2 text-center">
               عايز تعرف أكتر عني ؟
             </span>
-            <CornerUpRight className="relative z-10 mb-1 h-5 w-5" aria-hidden="true" />
             <span className="relative z-10 fluid-label text-white font-semibold">*دوس على الشريط*</span>
           </motion.a>
 
