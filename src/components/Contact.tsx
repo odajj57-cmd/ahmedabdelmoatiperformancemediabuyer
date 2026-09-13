@@ -1,6 +1,6 @@
 import { motion } from '@/lib/nomotion';
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
-import { CornerUpRight } from 'lucide-react';
+
 import { WHATSAPP_URL, LINKEDIN_URL } from '@/lib/links';
 
 
