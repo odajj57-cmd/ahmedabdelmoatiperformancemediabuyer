@@ -34,7 +34,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               dir="ltr"
               aria-label={`تواصل عبر واتساب ${PHONE_DISPLAY}`}
-              className="fluid-h3 font-extrabold tracking-widest text-primary transition-colors hover:text-accent"
+              className="fluid-h3 font-extrabold tracking-widest text-white transition-colors hover:text-gold-rich"
             >
               {PHONE_DISPLAY}
             </a>

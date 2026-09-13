@@ -31,7 +31,7 @@ const Hero = () => {
             className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary px-6 py-3 fluid-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:brightness-110"
           >
             <span>View My CV</span>
-            <Download className="h-4 w-4 text-primary" aria-hidden="true" />
+            <Download className="h-4 w-4 text-primary-foreground" aria-hidden="true" />
           </a>
         </div>
 

@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { WHATSAPP_URL } from "@/lib/links";
 
 const paragraphs = [
-  "بخبرة سنتين في الـDigital Marketing بهتم برحلة العميل من الإعلان لشراء المنتج أو الخدمة.",
+  "ببني Funnel لرحلة العميل من الإعلان لمرحلة الشراء وبساهم في تحسين أداء الحملات من خلال تحليل الـData وفهم الـAudience والـContent وتحويل الـInsights والTests لقرارات تساعد الـTeam على تحقيق نتائج أفضل.",
   "اشتغلت على إدارة وتحسين الحملات الإعلانية وتطوير الـContent Strategy لقطاعات مختلفة منها E-commerce · Fashion · Furniture · Interior Finishing، وأدرت حملات بإجمالي ميزانيات تجاوزت 1M EGP.",
   "شغلي بيجمع بين فهم الـAudience والـContent وبين قراءة الـData وإدارة الـPaid Media، وده بيساعدني أشوف الصورة بشكل أوسع من مجرد أرقام الـAds Manager.",
   "طريقتي مبنية على Diagnosis First: أفهم الـObjective، أحلل الـAudience والـContent والـFunnel، أحدد المشكلة وفرص التحسين، وبعدها أبني Tests واضحة وأطوّر الأداء بناءً على النتائج.",
