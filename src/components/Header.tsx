@@ -6,6 +6,7 @@ const links = [
   { href: '#about', label: 'أنا مين' },
   { href: '#services', label: 'بعمل إيه' },
   { href: '#portfolio', label: 'نتائج وأرقام' },
+  { href: '#experience', label: 'تجارب وخبرات' },
   { href: '#testimonials', label: 'توصيات العملاء' },
   { href: '#faq', label: 'عندك سؤال؟' },
   { href: '#contact', label: 'يلا نبدأ' },
