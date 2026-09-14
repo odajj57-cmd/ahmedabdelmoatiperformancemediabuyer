@@ -14,7 +14,7 @@ import FloatingWa from "@/components/FloatingWa";
 
 const title = "Ahmed Abdel Moati | Performance Media Buyer Specialist";
 const description =
-  "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـTeam على تحسين الأداء وتحقق الـBusiness Goals.";
+  "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـ\u2066Team\u2069 على تحسين الأداء وتحقق الـ\u2066Business Goals\u2069.";
 
 
 
