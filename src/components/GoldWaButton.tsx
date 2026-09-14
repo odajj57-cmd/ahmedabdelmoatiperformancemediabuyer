@@ -46,14 +46,7 @@ const GoldWaButton = ({
       </a>
     );
 
-  if (!caption) return bar;
-
-  return (
-    <span className="inline-flex w-fit flex-col items-center gap-1.5">
-      {bar}
-      <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
-    </span>
-  );
+  return bar;
 };
 
 export default GoldWaButton;

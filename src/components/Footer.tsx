@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="w-full text-center md:justify-self-center">
             <h3 className="fluid-h3 font-semibold text-primary mb-3 sm:mb-4">الخدمات إلي بعملها</h3>
             <p className="fluid-sm text-foreground">إدارة الحملات الإعلانية</p>
-            <p className="fluid-sm text-foreground">فهم الـWeb &amp; Conversion</p>
+            <p className="fluid-sm text-foreground">Web Design&amp; Conversion</p>
           </div>
 
           {/* Contact Section */}

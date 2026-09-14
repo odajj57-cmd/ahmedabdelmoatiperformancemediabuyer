@@ -1,5 +1,5 @@
 import { CornerUpRight, Download } from "lucide-react";
-import cvAsset from "@/assets/docs/cv.docx.asset.json";
+import cvAsset from "@/assets/docs/cv.pdf.asset.json";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="mt-5">
           <a
             href={cvAsset.url}
-            download="Ahmed_Abdel_Moati_CV.docx"
+            download="Ahmed_Abdel_Moati_CV.pdf"
             dir="ltr"
             className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary px-6 py-3 fluid-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:brightness-110"
           >

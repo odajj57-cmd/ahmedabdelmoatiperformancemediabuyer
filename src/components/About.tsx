@@ -31,11 +31,11 @@ const About = () => {
       ))}
 
       <p className="fluid-body font-semibold text-primary text-right mb-5 mt-6">
-        جاهز نبني Funnel ونحول البيانات لقرارات ربحية في البراند؟
+        جاهز أكون جزء من فريقك ونحول الـData والـInsights لقرارات تنفيذية تحقق نتائج أفضل لعملائك بالتعاون مع الـTeem.
       </p>
 
       <div className="flex flex-wrap gap-3 justify-end items-center">
-        <span className="inline-flex w-fit flex-col items-center gap-1.5">
+        <span className="inline-flex w-fit items-center">
           <a
             href={WHATSAPP_URL}
             data-cta="wa"
@@ -51,7 +51,6 @@ const About = () => {
             <span className="relative z-10">Let’s Talk About The Role</span>
             <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
           </a>
-          <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
         </span>
       </div>
     </motion.section>

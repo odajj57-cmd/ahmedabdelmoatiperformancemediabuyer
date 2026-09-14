@@ -44,7 +44,7 @@ const FloatingWa = () => {
   return (
     <div
       aria-hidden={!show}
-      className={`fixed bottom-5 left-5 z-[90] flex flex-col items-center gap-1.5 transition-all duration-300 ${
+      className={`fixed bottom-5 left-5 z-[90] flex items-center transition-all duration-300 ${
         show ? "opacity-100 translate-y-0" : "pointer-events-none opacity-0 translate-y-4"
       }`}
     >
@@ -64,8 +64,6 @@ const FloatingWa = () => {
         <span className="relative z-10">Let’s Tal</span>
         <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
       </a>
-
-      <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
     </div>
   );
 };
