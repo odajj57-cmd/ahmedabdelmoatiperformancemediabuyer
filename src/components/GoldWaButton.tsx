@@ -9,7 +9,6 @@ interface Props {
   className?: string;
   onClick?: () => void;
   as?: "a" | "button";
-  caption?: boolean;
 }
 
 /** Pill gold CTA with a translucent WhatsApp watermark behind the label. */
@@ -20,7 +19,6 @@ const GoldWaButton = ({
   className = "",
   onClick,
   as = "a",
-  caption = true,
 }: Props) => {
   const classes = `relative isolate inline-flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-rich px-6 py-3 fluid-sm font-bold text-gold-rich-foreground shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-105 ${className}`;
 
@@ -46,14 +44,7 @@ const GoldWaButton = ({
       </a>
     );
 
-  if (!caption) return bar;
-
-  return (
-    <span className="inline-flex w-fit flex-col items-center gap-1.5">
-      {bar}
-      <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
-    </span>
-  );
+  return bar;
 };
 
 export default GoldWaButton;

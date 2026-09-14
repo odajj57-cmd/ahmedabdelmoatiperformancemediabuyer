@@ -14,9 +14,7 @@ import FloatingWa from "@/components/FloatingWa";
 
 const title = "Ahmed Abdel Moati | Performance Media Buyer Specialist";
 const description =
-  "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـTeam على تحسين الأداء وتحقق الـBusiness Goals.";
-const OG_IMAGE =
-  "https://ahmedabdelmoataiperformancemediabuyer.lovable.app/__l5e/assets-v1/9702a3b2-f45b-4046-9e8c-aac9fd563eee/og-portrait.png";
+  "ببني رحلة العميل من الإعلان لشراء المنتج أو الخدمة وبحول البيانات لقرارات واضحة تساعد الـ\u2066Team\u2069 على تحسين الأداء وتحقق الـ\u2066Business Goals\u2069.";
 
 
 
@@ -33,11 +31,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "ar_EG" },
-      { property: "og:image", content: OG_IMAGE },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
-      { name: "twitter:image", content: OG_IMAGE },
 
       { name: "theme-color", content: "#0A7AFF" },
     ],

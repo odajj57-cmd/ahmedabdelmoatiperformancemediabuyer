@@ -345,7 +345,7 @@ const Portfolio = () => {
           className="text-center mb-8 sm:mb-10"
         >
           <h2 className="fluid-h2 font-bold text-primary">
-            حملات إعلانية لبراندات إشتغلت عليها
+            كيس استدي لأبرز التحديات
           </h2>
         </motion.div>
 

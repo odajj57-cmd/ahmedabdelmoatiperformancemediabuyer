@@ -13,11 +13,11 @@ const services = [
       'GA4 · Meta Pixel · Excel · Google Sheets · ChatGPT · Claude · استراتيجية المحتوى واختبار الحملات وإعادة الاستهداف والتحسين المستمر',
   },
   {
-    title: 'فهم الـWeb & Conversion',
+    title: 'Web Design& Conversion',
     body:
-      'بفهم أساسيات الـLanding Pages وتجربة المستخدم وبحلل رحلة العميل من الـAd للـConversion لتحديد نقاط الاحتكاك وفرص تحسين معدل التحويل.',
-    toolsLabel: 'المهارات والأدوات إلي بستخدمها:',
-    tools: 'تحليل صفحات الهبوط والتصميم على Shopify · Easy Orders',
+      'بعرف أصمم Websites وLanding Pages بتركز على تجربة المستخدم والـConversion مع فهم أساسيات الـCRO وتحليل رحلة العميل من الإعلان حتى إتمام الإجراء المطلوب لتحديد نقاط الاحتكاك وفرص تحسين معدل التحويل.',
+    toolsLabel: 'المهارات والأدوات:',
+    tools: 'Website & Landing Page Design · Shopify · Easy Orders · CRO Fundamentals · Customer Journey Analysis · UX Basics',
   },
 ];
 
@@ -90,7 +90,7 @@ const Services = () => {
         </div>
 
         <div className="mt-8 text-left">
-          <span className="inline-flex w-fit flex-col items-center gap-1.5">
+          <span className="inline-flex w-fit items-center">
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -100,7 +100,6 @@ const Services = () => {
               <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
               <span className="relative z-10" dir="ltr">Get In Touch</span>
             </a>
-            <span className="fluid-label text-gold-rich">*دوس على الشريط*</span>
           </span>
         </div>
       </div>

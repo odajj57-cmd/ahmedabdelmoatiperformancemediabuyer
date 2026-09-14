@@ -1,13 +1,13 @@
 import { useRef, useState, type PointerEvent } from 'react';
-import brandBaseeta from '@/assets/brands/experience/IMG-20260912-WA0066.jpg.asset.json';
-import brandEbano from '@/assets/brands/experience/IMG-20260912-WA0067.jpg.asset.json';
-import brandOrigami from '@/assets/brands/experience/IMG-20260912-WA0068.jpg.asset.json';
-import brandCore from '@/assets/brands/experience/IMG-20260912-WA0069.jpg.asset.json';
-import brandMisan from '@/assets/brands/experience/IMG-20260912-WA0070.jpg.asset.json';
-import brandAboElwafa from '@/assets/brands/experience/IMG-20260912-WA0071.jpg.asset.json';
-import brandArtika from '@/assets/brands/experience/IMG-20260912-WA0072.jpg.asset.json';
-import brandRadwan from '@/assets/brands/experience/IMG-20260912-WA0073.jpg.asset.json';
-import brandFinalShot from '@/assets/brands/experience/IMG-20260912-WA0074.jpg.asset.json';
+import brandBaseeta from '@/assets/brands/experience/baseeta.jpg.asset.json';
+import brandEbano from '@/assets/brands/experience/ebano.png.asset.json';
+import brandOrigami from '@/assets/brands/experience/origami.png.asset.json';
+import brandCore from '@/assets/brands/experience/core.png.asset.json';
+import brandMisan from '@/assets/brands/experience/misan.jpg.asset.json';
+import brandAboElwafa from '@/assets/brands/experience/abo-elwafa.webp.asset.json';
+import brandArtika from '@/assets/brands/experience/artika.png.asset.json';
+import brandRadwan from '@/assets/brands/experience/radwan.webp.asset.json';
+import brandFinalShot from '@/assets/brands/experience/final-shot.jpg.asset.json';
 
 const brands = [
   { name: 'بسيطة', image: brandBaseeta.url },
@@ -83,7 +83,7 @@ const BrandExperience = () => {
           id="experience-heading"
           className="fluid-h2 mb-8 text-center font-bold text-primary sm:mb-10"
         >
-          نماذج من البراندات والقطاعات اللي اشتغلت عليها
+          أبرز البراندات
         </h2>
 
         <div className="brand-marquee-shell">
