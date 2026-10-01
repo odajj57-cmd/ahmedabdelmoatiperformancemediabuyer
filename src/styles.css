@@ -368,6 +368,11 @@
   animation-play-state: paused;
 }
 
+/* Testimonials marquee — half the speed of the brands strip */
+.testimonials-marquee-track {
+  animation-duration: 92s;
+}
+
 .brand-marquee-group {
   display: flex;
   flex-shrink: 0;
