@@ -52,7 +52,7 @@ const FloatingWa = () => {
         href={FLOATING_WA_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Let’s Tal — تواصل عبر واتساب"
+        aria-label="Let’s Talk — تواصل عبر واتساب"
         tabIndex={show ? 0 : -1}
         dir="ltr"
         className="relative isolate inline-flex h-14 items-center gap-2 overflow-hidden rounded-full bg-gold-rich px-5 fluid-sm font-bold text-gold-rich-foreground shadow-[0_10px_30px_-8px_oklch(0.78_0.16_82_/_0.6)] transition-all duration-300 hover:brightness-110 hover:scale-105"
@@ -61,7 +61,7 @@ const FloatingWa = () => {
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[2.5em] text-gold-watermark opacity-[0.28]"
         />
-        <span className="relative z-10">Let’s Tal</span>
+        <span className="relative z-10">Let’s Talk</span>
         <CornerUpRight className="relative z-10 h-4 w-4" aria-hidden="true" />
       </a>
     </div>
