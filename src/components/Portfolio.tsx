@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { X, CornerUpRight, ImageIcon } from 'lucide-react';
 import caseImage from '@/assets/cases/case-image.png.asset.json';
@@ -331,22 +331,49 @@ Performance Marketer / Media Buyer — Owned the audience acquisition strategy, 
   },
 ];
 
+const AUTO_ADVANCE_MS = 4000;
+
 const Portfolio = () => {
   const [active, setActive] = useState<CaseStudy | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const progressRef = useRef(0);
   const shouldReduceMotion = useReducedMotion();
   const currentCaseStudy = caseStudies[activeIndex];
 
   useEffect(() => {
     if (isPaused || active || !currentCaseStudy) return;
 
-    const timer = window.setTimeout(() => {
-      setActiveIndex((current) => (current + 1) % caseStudies.length);
-    }, 4000);
+    let raf = 0;
+    let last = performance.now();
 
-    return () => window.clearTimeout(timer);
+    const tick = (now: number) => {
+      progressRef.current += now - last;
+      last = now;
+
+      const ratio = Math.min(progressRef.current / AUTO_ADVANCE_MS, 1);
+      setProgress(ratio);
+
+      if (ratio >= 1) {
+        progressRef.current = 0;
+        setProgress(0);
+        setActiveIndex((current) => (current + 1) % caseStudies.length);
+        return;
+      }
+
+      raf = requestAnimationFrame(tick);
+    };
+
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, [active, activeIndex, currentCaseStudy, isPaused]);
+
+  const goToCaseStudy = (index: number) => {
+    progressRef.current = 0;
+    setProgress(0);
+    setActiveIndex(index);
+  };
 
   if (!currentCaseStudy) return null;
 
