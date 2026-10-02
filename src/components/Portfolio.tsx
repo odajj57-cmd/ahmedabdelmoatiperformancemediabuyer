@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from '@/lib/nomotion';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { X, CornerUpRight, ImageIcon } from 'lucide-react';
 import caseImage from '@/assets/cases/case-image.png.asset.json';
 import caseImage2 from '@/assets/cases/case-image-2.png.asset.json';
@@ -333,6 +333,22 @@ Performance Marketer / Media Buyer — Owned the audience acquisition strategy, 
 
 const Portfolio = () => {
   const [active, setActive] = useState<CaseStudy | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+  const currentCaseStudy = caseStudies[activeIndex];
+
+  useEffect(() => {
+    if (isPaused || active || !currentCaseStudy) return;
+
+    const timer = window.setTimeout(() => {
+      setActiveIndex((current) => (current + 1) % caseStudies.length);
+    }, 8000);
+
+    return () => window.clearTimeout(timer);
+  }, [active, activeIndex, currentCaseStudy, isPaused]);
+
+  if (!currentCaseStudy) return null;
 
   return (
     <section id="portfolio" className="py-8 sm:py-10 bg-background relative overflow-hidden">
@@ -349,21 +365,32 @@ const Portfolio = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-          {caseStudies.map((cs) => (
+        <div
+          className="flex min-h-[25rem] w-full items-start justify-center sm:min-h-[27rem]"
+          onPointerEnter={() => setIsPaused(true)}
+          onPointerLeave={() => setIsPaused(false)}
+          onPointerDown={() => setIsPaused(true)}
+          onPointerUp={() => setIsPaused(false)}
+          onPointerCancel={() => setIsPaused(false)}
+          onFocusCapture={() => setIsPaused(true)}
+          onBlurCapture={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) setIsPaused(false);
+          }}
+        >
+          <AnimatePresence mode="wait" initial={false}>
             <motion.article
-              key={cs.id}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-colors duration-500 hover:border-gold/40"
+              key={currentCaseStudy.id}
+              initial={shouldReduceMotion ? false : { opacity: 0, x: 28 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, x: -28 }}
+              transition={{ duration: shouldReduceMotion ? 0 : 0.45, ease: 'easeInOut' }}
+              className="group flex w-full max-w-[22.5rem] flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-colors duration-500 hover:border-gold/40"
             >
               <div className="border-b border-border/50 bg-background/60">
-                {cs.cover ? (
+                {currentCaseStudy.cover ? (
                   <img
-                    src={cs.cover}
-                    alt={`غلاف حملة ${cs.name}`}
+                    src={currentCaseStudy.cover}
+                    alt={`غلاف حملة ${currentCaseStudy.name}`}
                     loading="lazy"
                     className="aspect-[4/3] w-full object-contain"
                   />
@@ -378,12 +405,12 @@ const Portfolio = () => {
               </div>
 
               <div className="flex flex-1 flex-col gap-3 p-4 text-right sm:p-5">
-                <p className="fluid-sm leading-relaxed text-foreground/90">{cs.short}</p>
+                <p className="fluid-sm leading-relaxed text-foreground/90">{currentCaseStudy.short}</p>
 
 
                 <button
                   type="button"
-                  onClick={() => setActive(cs)}
+                    onClick={() => setActive(currentCaseStudy)}
                   className="mt-auto inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-gold/50 bg-gold-rich/10 px-4 py-2 fluid-label font-bold text-primary transition-all hover:bg-gold-rich hover:text-gold-rich-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <span>شوف أرقام الحملة وطريقة التنفيذ</span>
@@ -391,7 +418,7 @@ const Portfolio = () => {
                 </button>
               </div>
             </motion.article>
-          ))}
+          </AnimatePresence>
         </div>
       </div>
 
