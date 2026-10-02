@@ -1,5 +1,6 @@
 import { CornerUpRight, Download } from "lucide-react";
 import cvAsset from "@/assets/docs/cv.pdf.asset.json";
+import portraitAsset from "@/assets/ahmed-hero-portrait.png.asset.json";
 
 const Hero = () => {
   return (
@@ -9,9 +10,15 @@ const Hero = () => {
       className="relative overflow-hidden bg-background pt-10 pb-6 sm:pt-14 sm:pb-8"
       aria-labelledby="hero-heading"
     >
-      <div className="absolute inset-0 opacity-20" aria-hidden="true">
-        <div className="absolute top-1/4 right-1/4 h-72 w-72 rounded-full bg-primary blur-[120px]" />
-        <div className="absolute bottom-1/4 left-1/4 h-72 w-72 rounded-full bg-accent blur-[120px]" />
+      <div className="absolute inset-0" aria-hidden="true">
+        <img
+          src={portraitAsset.url}
+          alt=""
+          className="h-full w-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/55 to-background" />
+        <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background/80 to-transparent" />
+        <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background/80 to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
