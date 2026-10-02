@@ -343,7 +343,7 @@ const Portfolio = () => {
 
     const timer = window.setTimeout(() => {
       setActiveIndex((current) => (current + 1) % caseStudies.length);
-    }, 5000);
+    }, 4000);
 
     return () => window.clearTimeout(timer);
   }, [active, activeIndex, currentCaseStudy, isPaused]);
